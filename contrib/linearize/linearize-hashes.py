@@ -124,7 +124,7 @@ if __name__ == '__main__':
     if 'host' not in settings:
         settings['host'] = '127.0.0.1'
     if 'port' not in settings:
-        settings['port'] = 4490
+        settings['port'] = 8811
     if 'min_height' not in settings:
         settings['min_height'] = 0
     if 'max_height' not in settings:
