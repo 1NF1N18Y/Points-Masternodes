@@ -75,8 +75,8 @@ static CBlock CreateDevNetGenesisBlock(const uint256 &prevBlockHash, const std::
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "Merging Blockchain and Gaming Seamlessly -- MergeX";
-    const CScript genesisOutputScript = CScript() << ParseHex("046becab3061f78e1f066364e06c70ccd3477967acac76c629c22ee5a61748c2480ad4c3b2a2fd02c1b0678e05e95fd5bf2a8206dd51fec79fae1b109788b53721") << OP_CHECKSIG;
+    const char* pszTimestamp = "Creating a Gpu minable coin 4/2/2024";
+    const CScript genesisOutputScript = CScript() << ParseHex("040674f634beff40c42a098c906808ca271fbbe4e8caf6334c6e33eb7a38d6c240b7dd4f654d60f5c293d8e53a8d0df10d545965f3a24375882e1f239ba3cc7753") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
