@@ -24,7 +24,7 @@ import time
 from test_framework.siphash import siphash256
 from test_framework.util import hex_str_to_bytes, bytes_to_hex_str
 
-import mergex_hash
+import points_hash
 
 MIN_VERSION_SUPPORTED = 60001
 MY_VERSION = 70219  # LLMQ_DATA_MESSAGES_VERSION
@@ -49,8 +49,8 @@ def sha256(s):
 def hash256(s):
     return sha256(sha256(s))
 
-def mergexhash(s):
-    return mergex_hash.getPoWHash(s)
+def pointshash(s):
+    return points_hash.getPoWHash(s)
 
 def ser_compact_size(l):
     r = b""
@@ -200,7 +200,7 @@ def FromHex(obj, hex_string):
 def ToHex(obj):
     return bytes_to_hex_str(obj.serialize())
 
-# Objects that map to mergexd objects, which can be serialized/deserialized
+# Objects that map to pointsd objects, which can be serialized/deserialized
 
 class CService():
     def __init__(self):
@@ -486,8 +486,8 @@ class CBlockHeader():
             r += struct.pack("<I", self.nTime)
             r += struct.pack("<I", self.nBits)
             r += struct.pack("<I", self.nNonce)
-            self.sha256 = uint256_from_str(mergexhash(r))
-            self.hash = encode(mergexhash(r)[::-1], 'hex_codec').decode('ascii')
+            self.sha256 = uint256_from_str(pointshash(r))
+            self.hash = encode(pointshash(r)[::-1], 'hex_codec').decode('ascii')
 
     def rehash(self):
         self.sha256 = None
@@ -1351,7 +1351,7 @@ class msg_headers():
         self.headers = headers if headers is not None else []
 
     def deserialize(self, f):
-        # comment in mergexd indicates these should be deserialized as blocks
+        # comment in pointsd indicates these should be deserialized as blocks
         blocks = deser_vector(f, CBlock)
         for x in blocks:
             self.headers.append(CBlockHeader(x))

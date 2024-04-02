@@ -129,7 +129,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../mergex.qrc"/>
+  <include location="../points.qrc"/>
  </resources>
  <connections>
   <connection>

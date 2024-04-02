@@ -5,7 +5,7 @@
 #include <dbwrapper.h>
 #include <uint256.h>
 #include <random.h>
-#include <test/test_mergex.h>
+#include <test/test_points.h>
 
 #include <memory>
 

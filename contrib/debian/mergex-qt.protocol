@@ -1,6 +1,6 @@
 [Protocol]
-exec=mergex-qt '%u'
-protocol=mergex
+exec=points-qt '%u'
+protocol=points
 input=none
 output=none
 helper=true

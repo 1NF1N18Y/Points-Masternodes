@@ -2,7 +2,7 @@
 # Copyright (c) 2018-2021 The Dash Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Test the mergex specific ZMQ notification interfaces."""
+"""Test the points specific ZMQ notification interfaces."""
 
 import configparser
 from enum import Enum
@@ -94,10 +94,10 @@ class MERGEXZMQTest (MERGEXTestFramework):
         node0_extra_args.append("-whitelist=127.0.0.1")
         node0_extra_args.append("-watchquorums")  # have to watch quorums to receive recsigs and trigger zmq
 
-        self.set_mergex_test_params(4, 3, fast_dip3_enforcement=True, extra_args=[node0_extra_args, [], [], []])
+        self.set_points_test_params(4, 3, fast_dip3_enforcement=True, extra_args=[node0_extra_args, [], [], []])
 
     def run_test(self):
-        # Check that mergexd has been built with ZMQ enabled.
+        # Check that pointsd has been built with ZMQ enabled.
         config = configparser.ConfigParser()
         config.read_file(open(self.options.configfile))
 
@@ -121,7 +121,7 @@ class MERGEXZMQTest (MERGEXTestFramework):
             # Wait a moment to avoid subscribing to recovered sig in the test before the one from the chainlock
             # has been sent which leads to test failure.
             time.sleep(1)
-            # Test all mergex related ZMQ publisher
+            # Test all points related ZMQ publisher
             self.test_recovered_signature_publishers()
             self.test_chainlock_publishers()
             self.test_instantsend_publishers()
@@ -330,7 +330,7 @@ class MERGEXZMQTest (MERGEXTestFramework):
             "end_epoch": proposal_time + 60,
             "payment_amount": 5,
             "payment_address": self.nodes[0].getnewaddress(),
-            "url": "https://mergex.org"
+            "url": "https://points.org"
         }
         proposal_hex = ''.join(format(x, '02x') for x in json.dumps(proposal_data).encode())
         collateral = self.nodes[0].gobject("prepare", "0", proposal_rev, proposal_time, proposal_hex)

@@ -8,7 +8,7 @@
 #include <script/script.h>
 #include <script/standard.h>
 #include <uint256.h>
-#include <test/test_mergex.h>
+#include <test/test_points.h>
 
 #include <vector>
 

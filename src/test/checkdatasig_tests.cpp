@@ -6,7 +6,7 @@
 #include <script/interpreter.h>
 
 #include <test/lcg.h>
-#include <test/test_mergex.h>
+#include <test/test_points.h>
 
 #include <boost/test/unit_test.hpp>
 

@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "MERGEX"
-            VALUE "FileDescription",    "mergex-tx (CLI MERGEX transaction editor utility)"
+            VALUE "FileDescription",    "points-tx (CLI MERGEX transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "mergex-tx"
+            VALUE "InternalName",       "points-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "mergex-tx.exe"
-            VALUE "ProductName",        "mergex-tx"
+            VALUE "OriginalFilename",   "points-tx.exe"
+            VALUE "ProductName",        "points-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

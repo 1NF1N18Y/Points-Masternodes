@@ -10,7 +10,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between mergex-cli and mergexd)
+ * CBaseChainParams defines the base parameters (shared between points-cli and pointsd)
  * of a given instance of the POINTS system.
  */
 class CBaseChainParams

@@ -348,7 +348,7 @@
         <translation>&amp;Vastaanota</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and mergex: URIs)</source>
+        <source>Request payments (generates QR codes and points: URIs)</source>
         <translation>Pyydä maksuja (Luo QR koodit ja MERGEX: URIt)</translation>
     </message>
     <message>
@@ -540,7 +540,7 @@
         <translation>Avaa &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a mergex: URI or payment request</source>
+        <source>Open a points: URI or payment request</source>
         <translation>Avaa MERGEX: URI tai maksupyyntö</translation>
     </message>
     <message>
@@ -1564,9 +1564,9 @@
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/mergex/</source>
+https://www.transifex.com/projects/p/points/</source>
         <translation>Puuttuuko sopiva kieli tai käännös on kesken? Auta käännöstyössä täällä:
-https://www.transifex.com/projects/p/mergex/</translation>
+https://www.transifex.com/projects/p/points/</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1859,7 +1859,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Maksupyyntövirhe</translation>
     </message>
     <message>
-        <source>Cannot start mergex: click-to-pay handler</source>
+        <source>Cannot start points: click-to-pay handler</source>
         <translation>Ei voi käynnistää MERGEXia: click-to-pay handler</translation>
     </message>
     <message>
@@ -1867,8 +1867,8 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>URI käsittely</translation>
     </message>
     <message>
-        <source>'mergex://' is not a valid URI. Use 'mergex:' instead.</source>
-        <translation>'mergex://' ei ole validi URI. Käytä sen sijaan 'mergex:'.</translation>
+        <source>'points://' is not a valid URI. Use 'points:' instead.</source>
+        <translation>'points://' ei ole validi URI. Käytä sen sijaan 'points:'.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -2896,7 +2896,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Jos mukautettu siirtomaksu on asetettu 1000 duff ja siirtotapahtuma on vain 250 tavua,&lt;br /&gt;tällöin "per kilotavu" maksaa vain 250 XMERGEX siirtomaksun, kun taas "vähintään" maksaa 1000 XMERGEX.&lt;br /&gt;Siirtotapahtumat jotka ovat isompia kuin kilotavu, molemmat maksaa "per kilotavu".</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for mergex transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for points transactions than the network can process.</source>
         <translation>Minimi siirtomaksun maksaminen on ok niin kauan kun siirtotapahtumien määrä on pienempi kuin tila lohkoissa.&lt;br /&gt;Mutta ota huomioon että tämä voi johtaa siirtotapahtumaan jota ei vahvisteta koskaan, jos siirtotapahtumia on enemmän kuin verkko voi käsitellä.</translation>
     </message>
     <message>
@@ -3187,7 +3187,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Viesti:</translation>
     </message>
     <message>
-        <source>A message that was attached to the mergex: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
+        <source>A message that was attached to the points: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
         <translation>Viesti joka liitettiin MERGEX: URI joka tallenetaan siirtotapahtuman kanssa viitteeksi sinulle. Huomio: Tätä viestiä ei lähetetä MERGEX verkkoon.</translation>
     </message>
     <message>
@@ -3979,7 +3979,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
     </message>
 </context>
 <context>
-    <name>mergex-core</name>
+    <name>points-core</name>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>Virhe: Sisääntulevien yhteyksien kuuntelu epäonnistui (kuuntelu palautti virheen %s)</translation>

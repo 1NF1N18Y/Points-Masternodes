@@ -15,7 +15,7 @@
 #include <uint256.h>
 #include <util.h>
 #include <utilstrencodings.h>
-#include <test/test_mergex.h>
+#include <test/test_points.h>
 
 #include <vector>
 

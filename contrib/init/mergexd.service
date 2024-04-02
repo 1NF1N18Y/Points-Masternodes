@@ -1,23 +1,23 @@
 # It is not recommended to modify this file in-place, because it will
 # be overwritten during package upgrades. If you want to add further
 # options or overwrite existing ones then use
-# $ systemctl edit mergexd.service
+# $ systemctl edit pointsd.service
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
-# /etc/mergex/mergex.conf
+# /etc/points/points.conf
 
 [Unit]
 Description=POINTS daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/mergexd -daemon -conf=/etc/mergex/mergex.conf -pid=/run/mergexd/mergexd.pid
-# Creates /run/mergex owned by mergex
-RuntimeDirectory=mergexd
-User=mergex
+ExecStart=/usr/bin/pointsd -daemon -conf=/etc/points/points.conf -pid=/run/pointsd/pointsd.pid
+# Creates /run/points owned by points
+RuntimeDirectory=pointsd
+User=points
 Type=forking
-PIDFile=/run/mergexd/mergexd.pid
+PIDFile=/run/pointsd/pointsd.pid
 Restart=on-failure
 
 # Hardening measures

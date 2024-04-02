@@ -38,15 +38,15 @@ Next, follow the instructions in [build-generic](build-generic.md)
 Running
 -------
 
-POINTS Core is now available at `./src/mergexd`
+POINTS Core is now available at `./src/pointsd`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=mergexrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/POINTS/mergex.conf"
+    echo -e "rpcuser=pointsrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/POINTS/points.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/POINTS/mergex.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/POINTS/points.conf"
 
-The first time you run mergexd, it will start downloading the blockchain. This process could take several hours.
+The first time you run pointsd, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
@@ -55,6 +55,6 @@ You can monitor the download process by looking at the debug.log file:
 Other commands:
 -------
 
-    ./src/mergexd -daemon # Starts the mergex daemon.
-    ./src/mergex-cli --help # Outputs a list of command-line options.
-    ./src/mergex-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/pointsd -daemon # Starts the points daemon.
+    ./src/points-cli --help # Outputs a list of command-line options.
+    ./src/points-cli help # Outputs a list of RPC commands when the daemon is running.

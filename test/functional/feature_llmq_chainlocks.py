@@ -18,7 +18,7 @@ Checks LLMQs based ChainLocks
 
 class LLMQChainLocksTest(MERGEXTestFramework):
     def set_test_params(self):
-        self.set_mergex_test_params(4, 3, fast_dip3_enforcement=True)
+        self.set_points_test_params(4, 3, fast_dip3_enforcement=True)
 
     def run_test(self):
 

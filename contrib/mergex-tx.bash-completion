@@ -1,15 +1,15 @@
-# bash programmable completion for mergex-tx(1)
+# bash programmable completion for points-tx(1)
 # Copyright (c) 2016 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-_mergex_tx() {
+_points_tx() {
     local cur prev words=() cword
-    local mergex_tx
+    local points_tx
 
-    # save and use original argument to invoke mergex-tx for -help
+    # save and use original argument to invoke points-tx for -help
     # it might not be in $PATH
-    mergex_tx="$1"
+    points_tx="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n =: cur prev words cword
@@ -27,15 +27,15 @@ _mergex_tx() {
 
     if [[ "$cword" == 1 || ( "$prev" != "-create" && "$prev" == -* ) ]]; then
         # only options (or an uncompletable hex-string) allowed
-        # parse mergex-tx -help for options
+        # parse points-tx -help for options
         local helpopts
-        helpopts=$($mergex_tx -help | sed -e '/^  -/ p' -e d )
+        helpopts=$($points_tx -help | sed -e '/^  -/ p' -e d )
         COMPREPLY=( $( compgen -W "$helpopts" -- "$cur" ) )
     else
         # only commands are allowed
         # parse -help for commands
         local helpcmds
-        helpcmds=$($mergex_tx -help | sed -e '1,/Commands:/d' -e 's/=.*/=/' -e '/^  [a-z]/ p' -e d )
+        helpcmds=$($points_tx -help | sed -e '1,/Commands:/d' -e 's/=.*/=/' -e '/^  [a-z]/ p' -e d )
         COMPREPLY=( $( compgen -W "$helpcmds" -- "$cur" ) )
     fi
 
@@ -46,7 +46,7 @@ _mergex_tx() {
 
     return 0
 } &&
-complete -F _mergex_tx mergex-tx
+complete -F _points_tx points-tx
 
 # Local variables:
 # mode: shell-script

@@ -2,7 +2,7 @@
 # Copyright (c) 2018-2020 The Dash Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Tests around mergex governance objects."""
+"""Tests around points governance objects."""
 
 from test_framework.test_framework import MERGEXTestFramework
 from test_framework.util import *
@@ -21,7 +21,7 @@ def validate_object(prepared, rpc_prepared):
 
 class MERGEXGovernanceTest (MERGEXTestFramework):
     def set_test_params(self):
-        self.set_mergex_test_params(2, 1)
+        self.set_points_test_params(2, 1)
 
     def prepare_object(self, object_type, parent_hash, creation_time, revision, name, amount):
         proposal_rev = revision
@@ -33,7 +33,7 @@ class MERGEXGovernanceTest (MERGEXTestFramework):
             "end_epoch": proposal_time + 24 * 60 * 60,
             "payment_amount": amount,
             "payment_address": self.nodes[0].getnewaddress(),
-            "url": "https://mergex.org"
+            "url": "https://points.org"
         }
         proposal_hex = ''.join(format(x, '02x') for x in json.dumps(proposal_template).encode())
         collateral_hash = self.nodes[0].gobject("prepare", parent_hash, proposal_rev, proposal_time, proposal_hex)

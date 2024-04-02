@@ -43,7 +43,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 90
 
 #define QAPP_ORG_NAME "MERGEX"
-#define QAPP_ORG_DOMAIN "mergex.org"
+#define QAPP_ORG_DOMAIN "points.org"
 #define QAPP_APP_NAME_DEFAULT "MERGEX-Qt"
 #define QAPP_APP_NAME_TESTNET "MERGEX-Qt-testnet"
 #define QAPP_APP_NAME_DEVNET "MERGEX-Qt-%s"

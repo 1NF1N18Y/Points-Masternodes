@@ -348,8 +348,8 @@
         <translation>&amp;Получить</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and mergex: URIs)</source>
-        <translation>Запросить платежи (создать QR-коды и mergex: URI)</translation>
+        <source>Request payments (generates QR codes and points: URIs)</source>
+        <translation>Запросить платежи (создать QR-коды и points: URI)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -540,8 +540,8 @@
         <translation>Открыть &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a mergex: URI or payment request</source>
-        <translation>Открыть mergex: URI или запрос платежа</translation>
+        <source>Open a points: URI or payment request</source>
+        <translation>Открыть points: URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1564,9 +1564,9 @@
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/mergex/</source>
+https://www.transifex.com/projects/p/points/</source>
         <translation>Нет Вашего языка или перевод неполон? Помогите нам сделать перевод лучше:
-https://www.transifex.com/projects/p/mergex/</translation>
+https://www.transifex.com/projects/p/points/</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1859,16 +1859,16 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Ошибка запроса платежа</translation>
     </message>
     <message>
-        <source>Cannot start mergex: click-to-pay handler</source>
-        <translation>Не удаётся запустить обработчик mergex: click-to-pay</translation>
+        <source>Cannot start points: click-to-pay handler</source>
+        <translation>Не удаётся запустить обработчик points: click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation>Обработка URI</translation>
     </message>
     <message>
-        <source>'mergex://' is not a valid URI. Use 'mergex:' instead.</source>
-        <translation>'mergex://' не является валидным URI. Используйте 'mergex:'.</translation>
+        <source>'points://' is not a valid URI. Use 'points:' instead.</source>
+        <translation>'points://' не является валидным URI. Используйте 'points:'.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -2892,7 +2892,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Если ручная комиссия  установлена в 1000 duff, а транзакция по размеру только 250 байт, то плата "за килобайт" составит лишь 250 duff,&lt;br&gt;в то время как "минимум" будет равна 1000 duff. Для транзакций больше килобайта в любом случае идет расчет "за килобайт".</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for mergex transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for points transactions than the network can process.</source>
         <translation>Оплаты только минимальной комиссии должно быть достаточно во всех случаях, пока в блоках достаточно места.&lt;br&gt;Однако, будьте готовы к тому, что транзакция может вовсе не получить подтверждения,&lt;br&gt;если количество транзакций будет стабильно больше, чем сеть способна обработать.</translation>
     </message>
     <message>
@@ -3183,8 +3183,8 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Сообщение:</translation>
     </message>
     <message>
-        <source>A message that was attached to the mergex: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
-        <translation>К mergex: URI было прикреплено сообщение, которое будет сохранено вместе с транзакцией для вашего сведения. Обратите внимание: сообщение не будет отправлено через сеть MERGEX.</translation>
+        <source>A message that was attached to the points: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
+        <translation>К points: URI было прикреплено сообщение, которое будет сохранено вместе с транзакцией для вашего сведения. Обратите внимание: сообщение не будет отправлено через сеть MERGEX.</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -3975,7 +3975,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
     </message>
 </context>
 <context>
-    <name>mergex-core</name>
+    <name>points-core</name>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>Ошибка: не удалось начать прослушивание входящих подключений (прослушивание вернуло ошибку %s)</translation>

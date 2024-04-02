@@ -7,7 +7,7 @@
 #define BITCOIN_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/mergex-config.h>
+#include <config/points-config.h>
 #endif
 
 #include <type_traits>

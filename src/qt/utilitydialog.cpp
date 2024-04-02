@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/mergex-config.h>
+#include <config/points-config.h>
 #endif
 
 #include <qt/utilitydialog.h>
@@ -75,7 +75,7 @@ HelpMessageDialog::HelpMessageDialog(interfaces::Node& node, QWidget *parent, He
     } else if (helpMode == cmdline) {
         setWindowTitle(tr("Command-line options"));
         QString header = "Usage:\n"
-            "  mergex-qt [command-line options]                     \n";
+            "  points-qt [command-line options]                     \n";
         QTextCursor cursor(ui->helpMessage->document());
         cursor.insertText(version);
         cursor.insertBlock();
@@ -153,7 +153,7 @@ For more information, see the <a style=\"%2\" href=\"%3\">%1 documentation</a>."
         )
         .arg("CoinJoin")
         .arg(GUIUtil::getThemedStyleQString(GUIUtil::ThemedStyle::TS_COMMAND))
-        .arg("https://docs.mergex.org/en/stable/wallets/mergex/coinjoin-instantsend.html")
+        .arg("https://docs.points.org/en/stable/wallets/points/coinjoin-instantsend.html")
         );
         ui->aboutMessage->setWordWrap(true);
         ui->helpMessage->setVisible(false);

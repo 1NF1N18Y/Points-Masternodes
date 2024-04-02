@@ -5,7 +5,7 @@
 #include <serialize.h>
 #include <streams.h>
 #include <hash.h>
-#include <test/test_mergex.h>
+#include <test/test_points.h>
 
 #include <stdint.h>
 

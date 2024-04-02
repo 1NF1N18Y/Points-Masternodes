@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/mergex-config.h>
+#include <config/points-config.h>
 #endif
 
 #include <init.h>
@@ -181,7 +181,7 @@ bool ShutdownRequested()
 /**
  * This is a minimally invasive approach to shutdown on LevelDB read errors from the
  * chainstate, while keeping user interface out of the common library, which is shared
- * between mergexd, and mergex-qt and non-server tools.
+ * between pointsd, and points-qt and non-server tools.
 */
 class CCoinsViewErrorCatcher final : public CCoinsViewBacked
 {
@@ -235,7 +235,7 @@ void PrepareShutdown()
     /// for example if the data directory was found to be locked.
     /// Be sure that anything that writes files or flushes caches only does this if the respective
     /// module was initialized.
-    RenameThread("mergex-shutoff");
+    RenameThread("points-shutoff");
     mempool.AddTransactionsUpdated(1);
     StopHTTPRPC();
     StopREST();
@@ -610,7 +610,7 @@ void SetupServerArgs()
     gArgs.AddArg("-printtoconsole", "Send trace/debug info to console instead of debug.log file", false, OptionsCategory::DEBUG_TEST);
     gArgs.AddArg("-printtodebuglog", strprintf("Send trace/debug info to debug.log file (default: %u)", 1), false, OptionsCategory::DEBUG_TEST);
     gArgs.AddArg("-shrinkdebugfile", "Shrink debug.log file on client startup (default: 1 when no -debug)", false, OptionsCategory::DEBUG_TEST);
-    gArgs.AddArg("-sporkaddr=<mergexaddress>", "Override spork address. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.", false, OptionsCategory::DEBUG_TEST);
+    gArgs.AddArg("-sporkaddr=<pointsaddress>", "Override spork address. Only useful for regtest and devnet. Using this on mainnet or testnet will ban you.", false, OptionsCategory::DEBUG_TEST);
     gArgs.AddArg("-sporkkey=<privatekey>", "Set the private key to be used for signing spork messages.", false, OptionsCategory::DEBUG_TEST);
     gArgs.AddArg("-uacomment=<cmt>", "Append comment to the user agent string", false, OptionsCategory::DEBUG_TEST);
 
@@ -660,7 +660,7 @@ void SetupServerArgs()
 std::string LicenseInfo()
 {
     const std::string URL_SOURCE_CODE = "<https://github.com/MERGEXTECH/MERGEX..git>";
-    const std::string URL_WEBSITE = "<https://mergex.tech>";
+    const std::string URL_WEBSITE = "<https://points.tech>";
 
     return CopyrightHolders(_("Copyright (C)"), 2014, COPYRIGHT_YEAR) + "\n" +
            "\n" +
@@ -765,7 +765,7 @@ void CleanupBlockRevFiles()
 void ThreadImport(std::vector<fs::path> vImportFiles)
 {
     const CChainParams& chainparams = Params();
-    RenameThread("mergex-loadblk");
+    RenameThread("points-loadblk");
     ScheduleBatchPriority();
 
     {

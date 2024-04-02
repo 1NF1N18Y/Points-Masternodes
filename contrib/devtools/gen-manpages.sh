@@ -7,10 +7,10 @@ BUILDDIR=${BUILDDIR:-$TOPDIR}
 BINDIR=${BINDIR:-$BUILDDIR/src}
 MANDIR=${MANDIR:-$TOPDIR/doc/man}
 
-BITCOIND=${BITCOIND:-$BINDIR/mergexd}
-BITCOINCLI=${BITCOINCLI:-$BINDIR/mergex-cli}
-BITCOINTX=${BITCOINTX:-$BINDIR/mergex-tx}
-BITCOINQT=${BITCOINQT:-$BINDIR/qt/mergex-qt}
+BITCOIND=${BITCOIND:-$BINDIR/pointsd}
+BITCOINCLI=${BITCOINCLI:-$BINDIR/points-cli}
+BITCOINTX=${BITCOINTX:-$BINDIR/points-tx}
+BITCOINQT=${BITCOINQT:-$BINDIR/qt/points-qt}
 
 [ ! -x $BITCOIND ] && echo "$BITCOIND not found or not executable." && exit 1
 
@@ -18,8 +18,8 @@ BITCOINQT=${BITCOINQT:-$BINDIR/qt/mergex-qt}
 BTCVER=($($BITCOINCLI --version | head -n1 | awk -F'[ -]' '{ print $6, $7 }'))
 
 # Create a footer file with copyright content.
-# This gets autodetected fine for mergexd if --version-string is not set,
-# but has different outcomes for mergex-qt and mergex-cli.
+# This gets autodetected fine for pointsd if --version-string is not set,
+# but has different outcomes for points-qt and points-cli.
 echo "[COPYRIGHT]" > footer.h2m
 $BITCOIND --version | sed -n '1!p' >> footer.h2m
 

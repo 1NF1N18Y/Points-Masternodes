@@ -400,7 +400,7 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../mergex.cpp" line="+540"/>
+        <location filename="../points.cpp" line="+540"/>
         <source>A fatal error occurred. MERGEX Core can no longer continue safely and will quit.</source>
         <translation>A fatal error occurred. MERGEX Core can no longer continue safely and will quit.</translation>
     </message>
@@ -446,8 +446,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Request payments (generates QR codes and mergex: URIs)</source>
-        <translation>Request payments (generates QR codes and mergex: URIs)</translation>
+        <source>Request payments (generates QR codes and points: URIs)</source>
+        <translation>Request payments (generates QR codes and points: URIs)</translation>
     </message>
     <message>
         <location line="+220"/>
@@ -686,8 +686,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Open a mergex: URI or payment request</source>
-        <translation>Open a mergex: URI or payment request</translation>
+        <source>Open a points: URI or payment request</source>
+        <translation>Open a points: URI or payment request</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1977,9 +1977,9 @@
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/mergex/</source>
+https://www.transifex.com/projects/p/points/</source>
         <translation>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/mergex/</translation>
+https://www.transifex.com/projects/p/points/</translation>
     </message>
     <message>
         <location line="+26"/>
@@ -2369,8 +2369,8 @@ https://www.transifex.com/projects/p/mergex/</translation>
     </message>
     <message>
         <location line="-396"/>
-        <source>Cannot start mergex: click-to-pay handler</source>
-        <translation>Cannot start mergex: click-to-pay handler</translation>
+        <source>Cannot start points: click-to-pay handler</source>
+        <translation>Cannot start points: click-to-pay handler</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2382,8 +2382,8 @@ https://www.transifex.com/projects/p/mergex/</translation>
     </message>
     <message>
         <location line="-41"/>
-        <source>&apos;mergex://&apos; is not a valid URI. Use &apos;mergex:&apos; instead.</source>
-        <translation>&apos;mergex://&apos; is not a valid URI. Use &apos;mergex:&apos; instead.</translation>
+        <source>&apos;points://&apos; is not a valid URI. Use &apos;points:&apos; instead.</source>
+        <translation>&apos;points://&apos; is not a valid URI. Use &apos;points:&apos; instead.</translation>
     </message>
     <message>
         <location line="+22"/>
@@ -2523,7 +2523,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../mergex.cpp" line="+17"/>
+        <location filename="../points.cpp" line="+17"/>
         <source>Choose data directory on startup (default: %u)</source>
         <translation>Choose data directory on startup (default: %u)</translation>
     </message>
@@ -2721,7 +2721,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
 <context>
     <name>QObject::QObject</name>
     <message>
-        <location filename="../mergex.cpp" line="-171"/>
+        <location filename="../points.cpp" line="-171"/>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
         <translation>Error: Specified data directory &quot;%1&quot; does not exist.</translation>
     </message>
@@ -3727,8 +3727,8 @@ https://www.transifex.com/projects/p/mergex/</translation>
     <message>
         <location line="+30"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for mergex transactions than the network can process.</source>
-        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for mergex transactions than the network can process.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for points transactions than the network can process.</source>
+        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for points transactions than the network can process.</translation>
     </message>
     <message>
         <location line="-40"/>
@@ -4106,8 +4106,8 @@ https://www.transifex.com/projects/p/mergex/</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the mergex: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
-        <translation>A message that was attached to the mergex: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</translation>
+        <source>A message that was attached to the points: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
+        <translation>A message that was attached to the points: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</translation>
     </message>
     <message>
         <location line="+433"/>
@@ -5121,9 +5121,9 @@ https://www.transifex.com/projects/p/mergex/</translation>
     </message>
 </context>
 <context>
-    <name>mergex-core</name>
+    <name>points-core</name>
     <message>
-        <location filename="../mergexstrings.cpp" line="+39"/>
+        <location filename="../pointsstrings.cpp" line="+39"/>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>Error: Listening for incoming connections failed (listen returned error %s)</translation>
     </message>

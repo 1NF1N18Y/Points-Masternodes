@@ -348,7 +348,7 @@
         <translation>&amp;Prijať</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and mergex: URIs)</source>
+        <source>Request payments (generates QR codes and points: URIs)</source>
         <translation>Vyžiadať platby (vygeneruje QR kódy a MERGEX: URI)</translation>
     </message>
     <message>
@@ -540,8 +540,8 @@
         <translation>Otvoriť &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a mergex: URI or payment request</source>
-        <translation>Otvoriť mergex: URI alebo žiadosť o platbu </translation>
+        <source>Open a points: URI or payment request</source>
+        <translation>Otvoriť points: URI alebo žiadosť o platbu </translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1544,9 +1544,9 @@
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/mergex/</source>
+https://www.transifex.com/projects/p/points/</source>
         <translation>Chýbajúci alebo nekompletný preklad? Pomôžte nám tu:
-https://www.transifex.com/projects/p/mergex/</translation>
+https://www.transifex.com/projects/p/points/</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1839,7 +1839,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Chyba pri vyžiadaní platby</translation>
     </message>
     <message>
-        <source>Cannot start mergex: click-to-pay handler</source>
+        <source>Cannot start points: click-to-pay handler</source>
         <translation>MERGEX sa nedá spustiť: click-to-pay handler</translation>
     </message>
     <message>
@@ -1847,8 +1847,8 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Spracovanie URI</translation>
     </message>
     <message>
-        <source>'mergex://' is not a valid URI. Use 'mergex:' instead.</source>
-        <translation>„mergex://“ nie je platný URI. Namiesto toho použite „mergex:“.</translation>
+        <source>'points://' is not a valid URI. Use 'points:' instead.</source>
+        <translation>„points://“ nie je platný URI. Namiesto toho použite „points:“.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -2868,7 +2868,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Ak je vlastný poplatok nastavený na 1000 duffov a transakcia je len 250 bytov, v tom prípade sa "za kilobajt" zaplatí  na poplatkoch iba 250 duffov, &lt;br /&gt;zatiaľ čo "pri najmenšom" zaplatí 1000 duffov. Pre transakcie väčšie ako jeden kilobajt, obe zaplatia rovnako za kilobajt. </translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for mergex transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for points transactions than the network can process.</source>
         <translation>Platenie minimálneho poplatku je v poriadku pokiaľ je objem transakcií menší ako je miesto v bloku. &lt;br /&gt;Buďte opatrný pretože to môže skončiť s nikdy nepotvrdenými transakciami, akonáhle je dopyt po MERGEX transakciách väčší ako dokáže sieť MERGEX spracovať.</translation>
     </message>
     <message>
@@ -3159,8 +3159,8 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Správa:</translation>
     </message>
     <message>
-        <source>A message that was attached to the mergex: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
-        <translation>Správa ktorá bola pripojená ku mergex: URI ktorá sa uchová spolu s transakciou pre vašu referenciu. Poznámka: Táto správa nebude poslaná cez sieť MERGEX.</translation>
+        <source>A message that was attached to the points: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
+        <translation>Správa ktorá bola pripojená ku points: URI ktorá sa uchová spolu s transakciou pre vašu referenciu. Poznámka: Táto správa nebude poslaná cez sieť MERGEX.</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -3951,7 +3951,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
     </message>
 </context>
 <context>
-    <name>mergex-core</name>
+    <name>points-core</name>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>Chyba: Počúvanie prichádzajúcich spojení zlyhalo (vrátená chyba je %s)</translation>

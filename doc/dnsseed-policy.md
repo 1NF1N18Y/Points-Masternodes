@@ -50,4 +50,4 @@ situations but should be discussed in public in advance.
 
 See also
 ----------
-- [mergex-seeder](https://github.com/nightlymergex/mergex-seeder) is a reference implementation of a DNS seed.
+- [points-seeder](https://github.com/nightlypoints/points-seeder) is a reference implementation of a DNS seed.

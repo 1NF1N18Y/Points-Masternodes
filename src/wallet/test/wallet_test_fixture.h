@@ -5,7 +5,7 @@
 #ifndef BITCOIN_WALLET_TEST_WALLET_TEST_FIXTURE_H
 #define BITCOIN_WALLET_TEST_WALLET_TEST_FIXTURE_H
 
-#include <test/test_mergex.h>
+#include <test/test_points.h>
 
 #include <wallet/wallet.h>
 

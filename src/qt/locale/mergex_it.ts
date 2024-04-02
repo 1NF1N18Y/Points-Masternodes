@@ -55,11 +55,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Scegli l'indirizzo a cui inviare i mergex</translation>
+        <translation>Scegli l'indirizzo a cui inviare i points</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Scegli l'indirizzo con cui ricevere mergex</translation>
+        <translation>Scegli l'indirizzo con cui ricevere points</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -75,7 +75,7 @@
     </message>
     <message>
         <source>These are your MERGEX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono i tuoi indirizzi MERGEX per inviare i pagamenti. Controlla sempre l'ammontare e l'indirizzo di destinazione prima di inviare i mergex.</translation>
+        <translation>Questi sono i tuoi indirizzi MERGEX per inviare i pagamenti. Controlla sempre l'ammontare e l'indirizzo di destinazione prima di inviare i points.</translation>
     </message>
     <message>
         <source>These are your MERGEX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -341,15 +341,15 @@
     </message>
     <message>
         <source>Send coins to a MERGEX address</source>
-        <translation>Spedire mergex ad un indirizzo MERGEX</translation>
+        <translation>Spedire points ad un indirizzo MERGEX</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
         <translation>&amp;Ricevi</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and mergex: URIs)</source>
-        <translation>Richieste di pagamenti (genera codici QR e mergex: URLs)</translation>
+        <source>Request payments (generates QR codes and points: URIs)</source>
+        <translation>Richieste di pagamenti (genera codici QR e points: URLs)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -540,8 +540,8 @@
         <translation>Apri &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a mergex: URI or payment request</source>
-        <translation>Apri un mergex: URI o una richiesta di pagamento</translation>
+        <source>Open a points: URI or payment request</source>
+        <translation>Apri un points: URI o una richiesta di pagamento</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1544,9 +1544,9 @@
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/mergex/</source>
+https://www.transifex.com/projects/p/points/</source>
         <translation>La tua lingua manca o la traduzione è incompleta? Contribuisci alla traduzione qui: 
-https://www.transifex.com/projects/p/mergex/</translation>
+https://www.transifex.com/projects/p/points/</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1839,16 +1839,16 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Errore di richiesta di pagamento</translation>
     </message>
     <message>
-        <source>Cannot start mergex: click-to-pay handler</source>
-        <translation>Impossibile avviare mergex: gestore click-to-pay</translation>
+        <source>Cannot start points: click-to-pay handler</source>
+        <translation>Impossibile avviare points: gestore click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation>Gestione URI</translation>
     </message>
     <message>
-        <source>'mergex://' is not a valid URI. Use 'mergex:' instead.</source>
-        <translation>"mergex: //" non è un URI valido. Utilizza  "mergex:".</translation>
+        <source>'points://' is not a valid URI. Use 'points:' instead.</source>
+        <translation>"points: //" non è un URI valido. Utilizza  "points:".</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -2793,7 +2793,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Invia mergex</translation>
+        <translation>Invia points</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2868,7 +2868,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Se la tariffa personalizzata è impostata su 1000 duff e la transazione è di soli 250 byte, paga solo 250 duff "per kilobyte" di Fee, &lt;br /&gt;mentre paga "almeno"  1000 duff. Per le transazioni più grandi di un kilobyte pagate entrambi per kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for mergex transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for points transactions than the network can process.</source>
         <translation>Pagare solo la commissione minima va bene finché il volume di transazioni è minore rispetto allo spazio nei blocchi. &lt;br /&gt;Ma sii consapevole che questo potrebbe risultare in una transazione non confermata, una volta che ci fosse più richiesta di transazioni di MERGEX di quanto la rete possa elaborare.</translation>
     </message>
     <message>
@@ -3029,7 +3029,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Conferma l'invio di mergex</translation>
+        <translation>Conferma l'invio di points</translation>
     </message>
     <message>
         <source>The recipient address is not valid. Please recheck.</source>
@@ -3159,8 +3159,8 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Messaggio:</translation>
     </message>
     <message>
-        <source>A message that was attached to the mergex: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
-        <translation>Un messaggio allegato con l'URI mergex che verrà memorizzato nella transazione per il tuo referente. Nota: questo messaggio non verrà inviato attraverso il network MERGEX.</translation>
+        <source>A message that was attached to the points: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
+        <translation>Un messaggio allegato con l'URI points che verrà memorizzato nella transazione per il tuo referente. Nota: questo messaggio non verrà inviato attraverso il network MERGEX.</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -3951,7 +3951,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
     </message>
 </context>
 <context>
-    <name>mergex-core</name>
+    <name>points-core</name>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>Errore: Ascolto per le connessioni in entrata non riuscito (ascoltare errore restituito %s)</translation>

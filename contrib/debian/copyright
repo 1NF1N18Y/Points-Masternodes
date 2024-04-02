@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: POINTS Core
-Upstream-Contact: POINTS Core Group, Inc https://www.mergex.org/team/
-Source: https://github.com/mergexpay/mergex
+Upstream-Contact: POINTS Core Group, Inc https://www.points.org/team/
+Source: https://github.com/pointspay/points
 
 Files: *
 Copyright: 2009-2017, Bitcoin Core Developers,
@@ -9,7 +9,7 @@ Copyright: 2009-2017, Bitcoin Core Developers,
 License: Expat
 Comment: The Bitcoin Core Developers encompasses the current developers listed on bitcoin.org,
          as well as the numerous contributors to the project. The POINTS Core Developers
-         encompasses the current developers listed on https://www.mergex.org/team/, as well as
+         encompasses the current developers listed on https://www.points.org/team/, as well as
          the numerous contributors to the project.
 
 Files: debian/*

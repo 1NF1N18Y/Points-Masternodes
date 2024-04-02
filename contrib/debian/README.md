@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package mergexd/mergex-qt
-for Debian-based Linux systems. If you compile mergexd/mergex-qt yourself, there are some useful files here.
+This directory contains files used to package pointsd/points-qt
+for Debian-based Linux systems. If you compile pointsd/points-qt yourself, there are some useful files here.
 
-## mergex: URI support ##
+## points: URI support ##
 
 
-mergex-qt.desktop  (Gnome / Open Desktop)
+points-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install mergex-qt.desktop
+	sudo desktop-file-install points-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your mergex-qt binary to `/usr/bin`
-and the `../../share/pixmaps/mergex128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your points-qt binary to `/usr/bin`
+and the `../../share/pixmaps/points128.png` to `/usr/share/pixmaps`
 
-mergex-qt.protocol (KDE)
+points-qt.protocol (KDE)
 

@@ -6,7 +6,7 @@
 #define BITCOIN_QT_BITCOINGUI_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/mergex-config.h>
+#include <config/points-config.h>
 #endif
 
 #include <amount.h>
@@ -308,7 +308,7 @@ private Q_SLOTS:
     void showPeers();
     void showRepair();
 
-    /** Open external (default) editor with mergex.conf */
+    /** Open external (default) editor with points.conf */
     void showConfEditor();
     /** Show folder with wallet backups in default file browser */
     void showBackups();

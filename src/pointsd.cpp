@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/mergex-config.h>
+#include <config/points-config.h>
 #endif
 
 #include <chainparams.h>
@@ -30,7 +30,7 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called MERGEX (https://www.mergex.org/),
+ * This is the developer documentation of the reference client for an experimental new digital currency called MERGEX (https://www.points.org/),
  * which enables instant payments to anyone, anywhere in the world. MERGEX uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
@@ -60,7 +60,7 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/mergex.conf are parsed in qt/mergex.cpp's main()
+    // If Qt is used, parameters/points.conf are parsed in qt/points.cpp's main()
     SetupServerArgs();
 #if HAVE_DECL_DAEMON
     gArgs.AddArg("-daemon", "Run in the background as a daemon and accept commands", false, OptionsCategory::OPTIONS);
@@ -84,7 +84,7 @@ bool AppInit(int argc, char* argv[])
         else
         {
             strUsage += "\nUsage:\n"
-                  "  mergexd [options]                     " + strprintf("Start %s Daemon", PACKAGE_NAME) + "\n";
+                  "  pointsd [options]                     " + strprintf("Start %s Daemon", PACKAGE_NAME) + "\n";
 
             strUsage += "\n" + gArgs.GetHelpMessage();
         }
@@ -124,12 +124,12 @@ bool AppInit(int argc, char* argv[])
         // Error out when loose non-argument tokens are encountered on command line
         for (int i = 1; i < argc; i++) {
             if (!IsSwitchChar(argv[i][0])) {
-                fprintf(stderr, "Error: Command line contains unexpected token '%s', see mergexd -h for a list of options.\n", argv[i]);
+                fprintf(stderr, "Error: Command line contains unexpected token '%s', see pointsd -h for a list of options.\n", argv[i]);
                 return false;
             }
         }
 
-        // -server defaults to true for mergexd but not for the GUI so do this here
+        // -server defaults to true for pointsd but not for the GUI so do this here
         gArgs.SoftSetBoolArg("-server", true);
         // Set this early so that parameter interactions go to console
         InitLogging();
@@ -200,7 +200,7 @@ int main(int argc, char* argv[])
 
     SetupEnvironment();
 
-    // Connect mergexd signal handlers
+    // Connect pointsd signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? EXIT_SUCCESS : EXIT_FAILURE);

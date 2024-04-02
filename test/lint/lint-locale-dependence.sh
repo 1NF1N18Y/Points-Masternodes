@@ -5,9 +5,9 @@ export LC_ALL=C
 KNOWN_VIOLATIONS=(
     "src/base58.cpp:.*isspace"
     "src/bench/string_cast.cpp.*atoi"
-    "src/mergex-tx.cpp.*stoul"
-    "src/mergex-tx.cpp.*trim_right"
-    "src/mergex-tx.cpp:.*atoi"
+    "src/points-tx.cpp.*stoul"
+    "src/points-tx.cpp.*trim_right"
+    "src/points-tx.cpp:.*atoi"
     "src/core_read.cpp.*is_digit"
     "src/dbwrapper.cpp.*stoul"
     "src/dbwrapper.cpp:.*vsnprintf"

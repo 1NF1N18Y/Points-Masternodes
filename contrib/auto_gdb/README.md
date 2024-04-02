@@ -1,9 +1,9 @@
 # Contents
-This directory contains tools to automatically get data about the memory consumption by some objects in mergexd process with the help of GDB debugger.
+This directory contains tools to automatically get data about the memory consumption by some objects in pointsd process with the help of GDB debugger.
 
-## mergex_dbg.sh
-This shell script attaches GDB to the running mergexd process (should be built with debug info), executes debug.gdb script and detaches.
-By default it uses testnet settings, see script comments to attach it to mainnet mergexd.
+## points_dbg.sh
+This shell script attaches GDB to the running pointsd process (should be built with debug info), executes debug.gdb script and detaches.
+By default it uses testnet settings, see script comments to attach it to mainnet pointsd.
 
 ## debug.gdb
 Contains debugger instructions to execute during attach: loads python code and executes it for the objects we want to investigate.

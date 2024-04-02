@@ -4,7 +4,7 @@
 
 #include <bls/bls.h>
 #include <bls/bls_batchverifier.h>
-#include <test/test_mergex.h>
+#include <test/test_points.h>
 
 #include <boost/test/unit_test.hpp>
 

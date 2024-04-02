@@ -8,7 +8,7 @@
 #define BITCOIN_VALIDATION_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/mergex-config.h>
+#include <config/points-config.h>
 #endif
 
 #include <amount.h>

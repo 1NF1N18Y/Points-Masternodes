@@ -17,8 +17,8 @@ Checks simple PoSe system based on LLMQ commitments
 
 class LLMQSimplePoSeTest(MERGEXTestFramework):
     def set_test_params(self):
-        self.set_mergex_test_params(6, 5, fast_dip3_enforcement=True)
-        self.set_mergex_llmq_test_params(5, 3)
+        self.set_points_test_params(6, 5, fast_dip3_enforcement=True)
+        self.set_points_llmq_test_params(5, 3)
 
     def run_test(self):
 

@@ -344,8 +344,8 @@
         <translation>&amp;Nhận</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and mergex: URIs)</source>
-        <translation>Yêu cầu thanh toán (sinh mã QR và mergex: URIs)</translation>
+        <source>Request payments (generates QR codes and points: URIs)</source>
+        <translation>Yêu cầu thanh toán (sinh mã QR và points: URIs)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -536,8 +536,8 @@
         <translation>Mở &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a mergex: URI or payment request</source>
-        <translation>Mở một mergex: URI hoặc một yêu cầu thanh toán</translation>
+        <source>Open a points: URI or payment request</source>
+        <translation>Mở một points: URI hoặc một yêu cầu thanh toán</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1082,8 +1082,8 @@
         <translation>Thông tin PrivateSend</translation>
     </message>
     <message>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the MERGEX in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two or more other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 MERGEX, 0.01 MERGEX, 0.1 MERGEX, 1 MERGEX and 10 MERGEX -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two or more other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be mixed. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a style="%1" href="https://docs.mergex.org/en/stable/wallets/mergex/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
-        <translation>&lt;h3&gt;Cơ bản về PrivateSend&lt;/h3&gt; PrivateSend cho bạn sự thực sự riêng tư về tài chính bằng việc che dấu những nguồn cung. Tất cả MERGEX trong ví của bạn bao gồm những "đầu vào" khác nhau mà bạn nghĩ đó là các coin riêng biệt và rời rạc.&lt;br&gt; PrivateSend sử dụng một tiến trình độc đáo để trộn các đầu vào của bạn với đầu vào của hai người khác, mà không làm cho các coin rời khỏi ví của bạn. Bạn vẫn giữ quyền kiểm soát tiền của bạn bất cứ lúc nào.&lt;hr&gt; &lt;b&gt;Quá trình PrivateSend làm việc như sau: &lt;/b&gt; &lt;ol type="1"&gt; &lt;li&gt;PrivateSend bắt đầu bằng việc chia các giao dịch đầu vào của bạn thành những mệnh giá chuẩn. Những mệnh giá đó là 0.001 MERGEX, 0.01 MERGEX, 0.1 MERGEX, 1 MERGEX, và 10 MERGEX -- cũng giống như các mệnh giá trên tiền giấy mà bạn sử dụng hàng ngày. &lt;/li&gt;&lt;li&gt;Ví của bạn sau đó gửi yêu cầu đến những nút phần mềm được cấu hình đặc biệt trên mạng gọi là các "masternode". Những masternode được báo rằng bạn quan tâm đến việc xáo trộn một mệnh giá nào đó. Không có thông tin định danh nào được gửi đến cho các masternode, và như vậy họ không bao giờ biết bạn "là ai". &lt;/li&gt; &lt;li&gt;Khi hai người kia gửi những thông điệp tương tự, có nghĩa là họ muốn xáo trộn cùng loại mệnh giá, một phiên xáo trộn bắt đầu. Masternode xáo trộn các đầu vào và hướng dẫn tất cả ví của cả ba người dùng để trả đầu vào đã được chuyển đổi trở lại cho chính họ. Ví của bạn sẽ trả mệnh giá đó trực tiếp cho nó, nhưng với một địa chỉ khác (được gọi là địa chỉ trả tiền lẻ). &lt;/li&gt; &lt;li&gt;Để thực sự che khuất nguồn tiền của bạn, ví của bạn phải lặp lại quy trình đó một số lần với mỗi mệnh giá nhất định. Mỗi lần tiến trình hoàn tất, nó được gọi là một "vòng". Mỗi vòng của PrivateSend làm nên độ khó bậc số mũ để xác định nguồn tiền của bạn đến từ đâu. &lt;/li&gt; &lt;li&gt;Quá trình xáo trộn này xảy ra trong chế độ nền mà không xen vào những việc khác của bạn. Khi bạn muốn thực hiện một giao dịch, nguồn tiền của bạn đã được ẩn danh rồi. Do đó bạn không cần phải đợi thêm gì nữa. &lt;/li&gt;&lt;/ol&gt; &lt;hr&gt; &lt;b&gt;QUAN TRỌNG:&lt;/b&gt; Ví của bạn chỉ có chứa 1000 "địa chỉ tiền trả lại". Mỗi lần một sự kiện xáo trộn xảy ra, có đến 9 địa chỉ sẽ được sử dụng. Điều đó có nghĩa với ví mới với 1000 địa chỉ thì dùng cho 100 lần trộn. Khi 900 địa chỉ đã được sử dụng, ví của bạn phải tạo thêm các địa chỉ mới. Nó chỉ có thể làm việc đó nếu bạn có chế độ tự động backup được bật&lt;br&gt; Kết quả là, những người dùng mà chế độ backup bị tắt sẽ có chế độ PrivateSend cũng bị tắt.&lt;hr&gt; Để biết thêm thông tin hãy xem &lt;a style="%1" href="https://docs.mergex.org/en/stable/wallets/mergex/privatesend-instantsend.html"&gt;Tài liệu về PrivateSend&lt;/a&gt;.</translation>
+        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the MERGEX in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two or more other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 MERGEX, 0.01 MERGEX, 0.1 MERGEX, 1 MERGEX and 10 MERGEX -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two or more other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be mixed. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a style="%1" href="https://docs.points.org/en/stable/wallets/points/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
+        <translation>&lt;h3&gt;Cơ bản về PrivateSend&lt;/h3&gt; PrivateSend cho bạn sự thực sự riêng tư về tài chính bằng việc che dấu những nguồn cung. Tất cả MERGEX trong ví của bạn bao gồm những "đầu vào" khác nhau mà bạn nghĩ đó là các coin riêng biệt và rời rạc.&lt;br&gt; PrivateSend sử dụng một tiến trình độc đáo để trộn các đầu vào của bạn với đầu vào của hai người khác, mà không làm cho các coin rời khỏi ví của bạn. Bạn vẫn giữ quyền kiểm soát tiền của bạn bất cứ lúc nào.&lt;hr&gt; &lt;b&gt;Quá trình PrivateSend làm việc như sau: &lt;/b&gt; &lt;ol type="1"&gt; &lt;li&gt;PrivateSend bắt đầu bằng việc chia các giao dịch đầu vào của bạn thành những mệnh giá chuẩn. Những mệnh giá đó là 0.001 MERGEX, 0.01 MERGEX, 0.1 MERGEX, 1 MERGEX, và 10 MERGEX -- cũng giống như các mệnh giá trên tiền giấy mà bạn sử dụng hàng ngày. &lt;/li&gt;&lt;li&gt;Ví của bạn sau đó gửi yêu cầu đến những nút phần mềm được cấu hình đặc biệt trên mạng gọi là các "masternode". Những masternode được báo rằng bạn quan tâm đến việc xáo trộn một mệnh giá nào đó. Không có thông tin định danh nào được gửi đến cho các masternode, và như vậy họ không bao giờ biết bạn "là ai". &lt;/li&gt; &lt;li&gt;Khi hai người kia gửi những thông điệp tương tự, có nghĩa là họ muốn xáo trộn cùng loại mệnh giá, một phiên xáo trộn bắt đầu. Masternode xáo trộn các đầu vào và hướng dẫn tất cả ví của cả ba người dùng để trả đầu vào đã được chuyển đổi trở lại cho chính họ. Ví của bạn sẽ trả mệnh giá đó trực tiếp cho nó, nhưng với một địa chỉ khác (được gọi là địa chỉ trả tiền lẻ). &lt;/li&gt; &lt;li&gt;Để thực sự che khuất nguồn tiền của bạn, ví của bạn phải lặp lại quy trình đó một số lần với mỗi mệnh giá nhất định. Mỗi lần tiến trình hoàn tất, nó được gọi là một "vòng". Mỗi vòng của PrivateSend làm nên độ khó bậc số mũ để xác định nguồn tiền của bạn đến từ đâu. &lt;/li&gt; &lt;li&gt;Quá trình xáo trộn này xảy ra trong chế độ nền mà không xen vào những việc khác của bạn. Khi bạn muốn thực hiện một giao dịch, nguồn tiền của bạn đã được ẩn danh rồi. Do đó bạn không cần phải đợi thêm gì nữa. &lt;/li&gt;&lt;/ol&gt; &lt;hr&gt; &lt;b&gt;QUAN TRỌNG:&lt;/b&gt; Ví của bạn chỉ có chứa 1000 "địa chỉ tiền trả lại". Mỗi lần một sự kiện xáo trộn xảy ra, có đến 9 địa chỉ sẽ được sử dụng. Điều đó có nghĩa với ví mới với 1000 địa chỉ thì dùng cho 100 lần trộn. Khi 900 địa chỉ đã được sử dụng, ví của bạn phải tạo thêm các địa chỉ mới. Nó chỉ có thể làm việc đó nếu bạn có chế độ tự động backup được bật&lt;br&gt; Kết quả là, những người dùng mà chế độ backup bị tắt sẽ có chế độ PrivateSend cũng bị tắt.&lt;hr&gt; Để biết thêm thông tin hãy xem &lt;a style="%1" href="https://docs.points.org/en/stable/wallets/points/privatesend-instantsend.html"&gt;Tài liệu về PrivateSend&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
@@ -1586,9 +1586,9 @@
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/mergex/</source>
+https://www.transifex.com/projects/p/points/</source>
         <translation>Ngôn ngữ ị thiếu hoặc việc dịch chưa hoàn tất? Tham gia dịch giúp tại đây:
-https://www.transifex.com/projects/p/mergex/</translation>
+https://www.transifex.com/projects/p/points/</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1881,8 +1881,8 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Yêu cầu thanh toán bị lỗi</translation>
     </message>
     <message>
-        <source>Cannot start mergex: click-to-pay handler</source>
-        <translation>Không thể khởi động mergex: trình xử lý click-to-pay</translation>
+        <source>Cannot start points: click-to-pay handler</source>
+        <translation>Không thể khởi động points: trình xử lý click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -2818,8 +2818,8 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Nếu mức phí tuỳ chỉnh được đặt là 1000 duff và giao dịch chỉ có 250 byte, thì "theo kilobyte" chỉ trả 250 duff cho phí,&lt;br /&gt;trong khi "ít nhất" phải trả 1000 duff. Cho các giao dịch lớn hơn 1 kilobyte thì cả hai đều trả theo kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for mergex transactions than the network can process.</source>
-        <translation>Chỉ trả phí tối thiểu cũng được chỉ khi mà có lượng giao dịch ít hơn không gian trong khối.&lt;br /&gt;Nhưng cần lưu ý là nó có thể xảy ra hiện tượng giao dịch không bao giờ được xác nhận một khi có nhiều nhu cầu giao mergex hơn khả năng mà mạng lưới có thể xử lý được.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for points transactions than the network can process.</source>
+        <translation>Chỉ trả phí tối thiểu cũng được chỉ khi mà có lượng giao dịch ít hơn không gian trong khối.&lt;br /&gt;Nhưng cần lưu ý là nó có thể xảy ra hiện tượng giao dịch không bao giờ được xác nhận một khi có nhiều nhu cầu giao points hơn khả năng mà mạng lưới có thể xử lý được.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -3101,8 +3101,8 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Thông điệp:</translation>
     </message>
     <message>
-        <source>A message that was attached to the mergex: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
-        <translation>Một thông điệp được đính với mergex: URI đó sẽ được lưu trữ với các giao dịch cho các bạn tham khảo. Lưu ý: Thông điệp này sẽ không được gửi qua mạng MERGEX. </translation>
+        <source>A message that was attached to the points: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
+        <translation>Một thông điệp được đính với points: URI đó sẽ được lưu trữ với các giao dịch cho các bạn tham khảo. Lưu ý: Thông điệp này sẽ không được gửi qua mạng MERGEX. </translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -3881,7 +3881,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
     </message>
 </context>
 <context>
-    <name>mergex-core</name>
+    <name>points-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Liên kết với địa chỉ nhất định và luôn luôn lắng nghe trên đó. Sử dụng ký hiệu [host]:port cho IPv6</translation>

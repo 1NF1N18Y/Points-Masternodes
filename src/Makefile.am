@@ -47,36 +47,36 @@ BITCOIN_INCLUDES += $(UNIVALUE_CFLAGS)
 
 BLS_LIBS=-lbls-dash -lgmp
 
-LIBBITCOIN_SERVER=libmergex_server.a
-LIBBITCOIN_COMMON=libmergex_common.a
-LIBBITCOIN_CONSENSUS=libmergex_consensus.a
-LIBBITCOIN_CLI=libmergex_cli.a
-LIBBITCOIN_UTIL=libmergex_util.a
-LIBBITCOIN_CRYPTO_BASE=crypto/libmergex_crypto_base.a
-LIBBITCOINQT=qt/libmergexqt.a
+LIBBITCOIN_SERVER=libpoints_server.a
+LIBBITCOIN_COMMON=libpoints_common.a
+LIBBITCOIN_CONSENSUS=libpoints_consensus.a
+LIBBITCOIN_CLI=libpoints_cli.a
+LIBBITCOIN_UTIL=libpoints_util.a
+LIBBITCOIN_CRYPTO_BASE=crypto/libpoints_crypto_base.a
+LIBBITCOINQT=qt/libpointsqt.a
 LIBSECP256K1=secp256k1/libsecp256k1.la
 
 if ENABLE_ZMQ
-LIBBITCOIN_ZMQ=libmergex_zmq.a
+LIBBITCOIN_ZMQ=libpoints_zmq.a
 endif
 if BUILD_BITCOIN_LIBS
-LIBBITCOINCONSENSUS=libmergexconsensus.la
+LIBBITCOINCONSENSUS=libpointsconsensus.la
 endif
 if ENABLE_WALLET
-LIBBITCOIN_WALLET=libmergex_wallet.a
+LIBBITCOIN_WALLET=libpoints_wallet.a
 endif
 
 LIBBITCOIN_CRYPTO= $(LIBBITCOIN_CRYPTO_BASE)
 if ENABLE_SSE41
-LIBBITCOIN_CRYPTO_SSE41 = crypto/libmergex_crypto_sse41.a
+LIBBITCOIN_CRYPTO_SSE41 = crypto/libpoints_crypto_sse41.a
 LIBBITCOIN_CRYPTO += $(LIBBITCOIN_CRYPTO_SSE41)
 endif
 if ENABLE_AVX2
-LIBBITCOIN_CRYPTO_AVX2 = crypto/libmergex_crypto_avx2.a
+LIBBITCOIN_CRYPTO_AVX2 = crypto/libpoints_crypto_avx2.a
 LIBBITCOIN_CRYPTO += $(LIBBITCOIN_CRYPTO_AVX2)
 endif
 if ENABLE_SHANI
-LIBBITCOIN_CRYPTO_SHANI = crypto/libmergex_crypto_shani.a
+LIBBITCOIN_CRYPTO_SHANI = crypto/libpoints_crypto_shani.a
 LIBBITCOIN_CRYPTO += $(LIBBITCOIN_CRYPTO_SHANI)
 endif
 
@@ -103,15 +103,15 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += mergexd
+  bin_PROGRAMS += pointsd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += mergex-cli mergex-tx
+  bin_PROGRAMS += points-cli points-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# mergex core #
+# points core #
 BITCOIN_CORE_H = \
   addrdb.h \
   addressindex.h \
@@ -287,12 +287,12 @@ obj/build.h: FORCE
 	@$(MKDIR_P) $(builddir)/obj
 	@$(top_srcdir)/share/genbuild.sh "$(abs_top_builddir)/src/obj/build.h" \
 	  "$(abs_top_srcdir)"
-libmergex_util_a-clientversion.$(OBJEXT): obj/build.h
+libpoints_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between mergexd and mergex-qt
-libmergex_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
-libmergex_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libmergex_server_a_SOURCES = \
+# server: shared between pointsd and points-qt
+libpoints_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
+libpoints_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libpoints_server_a_SOURCES = \
   addrdb.cpp \
   addrman.cpp \
   batchedlogger.cpp \
@@ -378,9 +378,9 @@ libmergex_server_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 if ENABLE_ZMQ
-libmergex_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
-libmergex_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libmergex_zmq_a_SOURCES = \
+libpoints_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
+libpoints_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libpoints_zmq_a_SOURCES = \
   zmq/zmqabstractnotifier.cpp \
   zmq/zmqnotificationinterface.cpp \
   zmq/zmqpublishnotifier.cpp \
@@ -388,11 +388,11 @@ libmergex_zmq_a_SOURCES = \
 endif
 
 
-# wallet: shared between mergexd and mergex-qt, but only linked
+# wallet: shared between pointsd and points-qt, but only linked
 # when wallet enabled
-libmergex_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libmergex_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libmergex_wallet_a_SOURCES = \
+libpoints_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libpoints_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libpoints_wallet_a_SOURCES = \
   coinjoin/coinjoin-client.cpp \
   coinjoin/coinjoin-client-options.cpp \
   coinjoin/coinjoin-util.cpp \
@@ -411,9 +411,9 @@ libmergex_wallet_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 # crypto primitives library
-crypto_libmergex_crypto_base_a_CPPFLAGS = $(AM_CPPFLAGS) $(PIC_FLAGS)
-crypto_libmergex_crypto_base_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) $(PIC_FLAGS)
-crypto_libmergex_crypto_base_a_SOURCES = \
+crypto_libpoints_crypto_base_a_CPPFLAGS = $(AM_CPPFLAGS) $(PIC_FLAGS)
+crypto_libpoints_crypto_base_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) $(PIC_FLAGS)
+crypto_libpoints_crypto_base_a_SOURCES = \
   crypto/aes.cpp \
   crypto/aes.h \
   crypto/chacha_poly_aead.h \
@@ -438,23 +438,23 @@ crypto_libmergex_crypto_base_a_SOURCES = \
   crypto/sha512.h
 
 if USE_ASM
-crypto_libmergex_crypto_base_a_SOURCES += crypto/sha256_sse4.cpp
+crypto_libpoints_crypto_base_a_SOURCES += crypto/sha256_sse4.cpp
 endif
 
-crypto_libmergex_crypto_sse41_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-crypto_libmergex_crypto_sse41_a_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libmergex_crypto_sse41_a_CXXFLAGS += $(SSE41_CXXFLAGS)
-crypto_libmergex_crypto_sse41_a_CPPFLAGS += -DENABLE_SSE41
-crypto_libmergex_crypto_sse41_a_SOURCES = crypto/sha256_sse41.cpp
+crypto_libpoints_crypto_sse41_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+crypto_libpoints_crypto_sse41_a_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_libpoints_crypto_sse41_a_CXXFLAGS += $(SSE41_CXXFLAGS)
+crypto_libpoints_crypto_sse41_a_CPPFLAGS += -DENABLE_SSE41
+crypto_libpoints_crypto_sse41_a_SOURCES = crypto/sha256_sse41.cpp
 
-crypto_libmergex_crypto_avx2_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-crypto_libmergex_crypto_avx2_a_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libmergex_crypto_avx2_a_CXXFLAGS += $(AVX2_CXXFLAGS)
-crypto_libmergex_crypto_avx2_a_CPPFLAGS += -DENABLE_AVX2
-crypto_libmergex_crypto_avx2_a_SOURCES = crypto/sha256_avx2.cpp
+crypto_libpoints_crypto_avx2_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+crypto_libpoints_crypto_avx2_a_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_libpoints_crypto_avx2_a_CXXFLAGS += $(AVX2_CXXFLAGS)
+crypto_libpoints_crypto_avx2_a_CPPFLAGS += -DENABLE_AVX2
+crypto_libpoints_crypto_avx2_a_SOURCES = crypto/sha256_avx2.cpp
 
 # x11
-crypto_libmergex_crypto_base_a_SOURCES += \
+crypto_libpoints_crypto_base_a_SOURCES += \
   crypto/blake.c \
   crypto/bmw.c \
   crypto/cubehash.c \
@@ -479,16 +479,16 @@ crypto_libmergex_crypto_base_a_SOURCES += \
   crypto/sph_skein.h \
   crypto/sph_types.h
 
-crypto_libmergex_crypto_shani_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-crypto_libmergex_crypto_shani_a_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libmergex_crypto_shani_a_CXXFLAGS += $(SHANI_CXXFLAGS)
-crypto_libmergex_crypto_shani_a_CPPFLAGS += -DENABLE_SHANI
-crypto_libmergex_crypto_shani_a_SOURCES = crypto/sha256_shani.cpp
+crypto_libpoints_crypto_shani_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+crypto_libpoints_crypto_shani_a_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_libpoints_crypto_shani_a_CXXFLAGS += $(SHANI_CXXFLAGS)
+crypto_libpoints_crypto_shani_a_CPPFLAGS += -DENABLE_SHANI
+crypto_libpoints_crypto_shani_a_SOURCES = crypto/sha256_shani.cpp
 
 # consensus: shared between all executables that validate any consensus rules.
-libmergex_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libmergex_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libmergex_consensus_a_SOURCES = \
+libpoints_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libpoints_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libpoints_consensus_a_SOURCES = \
   amount.h \
   arith_uint256.cpp \
   arith_uint256.h \
@@ -507,7 +507,7 @@ libmergex_consensus_a_SOURCES = \
   primitives/transaction.h \
   pubkey.cpp \
   pubkey.h \
-  script/mergexconsensus.cpp \
+  script/pointsconsensus.cpp \
   script/interpreter.cpp \
   script/interpreter.h \
   script/script.cpp \
@@ -524,10 +524,10 @@ libmergex_consensus_a_SOURCES = \
   utilstrencodings.h \
   version.h
 
-# common: shared between mergexd, and mergex-qt and non-server tools
-libmergex_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libmergex_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libmergex_common_a_SOURCES = \
+# common: shared between pointsd, and points-qt and non-server tools
+libpoints_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libpoints_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libpoints_common_a_SOURCES = \
   base58.cpp \
   bech32.cpp \
   bip39.cpp \
@@ -555,9 +555,9 @@ libmergex_common_a_SOURCES = \
 # util: shared between all executables.
 # This library *must* be included to make sure that the glibc
 # backward-compatibility objects and their sanity checks are linked.
-libmergex_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libmergex_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libmergex_util_a_SOURCES = \
+libpoints_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libpoints_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libpoints_util_a_SOURCES = \
   bls/bls_batchverifier.h \
   bls/bls_ies.cpp \
   bls/bls_ies.h \
@@ -586,31 +586,31 @@ libmergex_util_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 if GLIBC_BACK_COMPAT
-libmergex_util_a_SOURCES += compat/glibc_compat.cpp
+libpoints_util_a_SOURCES += compat/glibc_compat.cpp
 AM_LDFLAGS += -Wl,--wrap=log2f -Wl,--wrap=__divmoddi4
 endif
 
-# cli: shared between mergex-cli and mergex-qt
-libmergex_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libmergex_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libmergex_cli_a_SOURCES = \
+# cli: shared between points-cli and points-qt
+libpoints_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libpoints_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libpoints_cli_a_SOURCES = \
   rpc/client.cpp \
   $(BITCOIN_CORE_H)
 
-nodist_libmergex_util_a_SOURCES = $(srcdir)/obj/build.h
+nodist_libpoints_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# mergexd binary #
-mergexd_SOURCES = mergexd.cpp
-mergexd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-mergexd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-mergexd_LDFLAGS = $(LDFLAGS_WRAP_EXCEPTIONS) $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# pointsd binary #
+pointsd_SOURCES = pointsd.cpp
+pointsd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+pointsd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+pointsd_LDFLAGS = $(LDFLAGS_WRAP_EXCEPTIONS) $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-mergexd_SOURCES += mergexd-res.rc
+pointsd_SOURCES += pointsd-res.rc
 endif
 
-mergexd_LDADD = \
+pointsd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_COMMON) \
@@ -624,37 +624,37 @@ mergexd_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-mergexd_LDADD += $(BACKTRACE_LIB) $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS) $(BLS_LIBS)
+pointsd_LDADD += $(BACKTRACE_LIB) $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS) $(BLS_LIBS)
 
-# mergex-cli binary #
-mergex_cli_SOURCES = mergex-cli.cpp
-mergex_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-mergex_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-mergex_cli_LDFLAGS = $(LDFLAGS_WRAP_EXCEPTIONS) $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# points-cli binary #
+points_cli_SOURCES = points-cli.cpp
+points_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+points_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+points_cli_LDFLAGS = $(LDFLAGS_WRAP_EXCEPTIONS) $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-mergex_cli_SOURCES += mergex-cli-res.rc
+points_cli_SOURCES += points-cli-res.rc
 endif
 
-mergex_cli_LDADD = \
+points_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
-mergex_cli_LDADD += $(BACKTRACE_LIB) $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS) $(BLS_LIBS)
+points_cli_LDADD += $(BACKTRACE_LIB) $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS) $(BLS_LIBS)
 #
 
-# mergex-tx binary #
-mergex_tx_SOURCES = mergex-tx.cpp
-mergex_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-mergex_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-mergex_tx_LDFLAGS = $(LDFLAGS_WRAP_EXCEPTIONS) $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# points-tx binary #
+points_tx_SOURCES = points-tx.cpp
+points_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+points_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+points_tx_LDFLAGS = $(LDFLAGS_WRAP_EXCEPTIONS) $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-mergex_tx_SOURCES += mergex-tx-res.rc
+points_tx_SOURCES += points-tx-res.rc
 endif
 
-mergex_tx_LDADD = \
+points_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -662,22 +662,22 @@ mergex_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-mergex_tx_LDADD += $(BACKTRACE_LIB) $(BOOST_LIBS) $(CRYPTO_LIBS) $(BLS_LIBS)
+points_tx_LDADD += $(BACKTRACE_LIB) $(BOOST_LIBS) $(CRYPTO_LIBS) $(BLS_LIBS)
 #
 
-# mergexconsensus library #
+# pointsconsensus library #
 if BUILD_BITCOIN_LIBS
-include_HEADERS = script/mergexconsensus.h
-libmergexconsensus_la_SOURCES = support/cleanse.cpp $(crypto_libmergex_crypto_base_a_SOURCES) $(libmergex_consensus_a_SOURCES)
+include_HEADERS = script/pointsconsensus.h
+libpointsconsensus_la_SOURCES = support/cleanse.cpp $(crypto_libpoints_crypto_base_a_SOURCES) $(libpoints_consensus_a_SOURCES)
 
 if GLIBC_BACK_COMPAT
-  libmergexconsensus_la_SOURCES += compat/glibc_compat.cpp
+  libpointsconsensus_la_SOURCES += compat/glibc_compat.cpp
 endif
 
-libmergexconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
-libmergexconsensus_la_LIBADD = $(LIBSECP256K1) $(BLS_LIBS)
-libmergexconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_BITCOIN_INTERNAL
-libmergexconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libpointsconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
+libpointsconsensus_la_LIBADD = $(LIBSECP256K1) $(BLS_LIBS)
+libpointsconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_BITCOIN_INTERNAL
+libpointsconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 
 endif
 #
@@ -710,12 +710,12 @@ EXTRA_DIST = $(CTAES_DIST)
 EXTRA_DIST += $(IMMER_DIST)
 
 
-config/mergex-config.h: config/stamp-h1
+config/points-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/mergex-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/points-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/mergex-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/mergex-config.h.in
+$(top_srcdir)/$(subdir)/config/points-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/points-config.h.in
 
 
 clean-local:

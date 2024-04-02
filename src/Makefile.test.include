@@ -3,11 +3,11 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-TESTS += test/test_mergex
-bin_PROGRAMS += test/test_mergex
-noinst_PROGRAMS += test/test_mergex_fuzzy
+TESTS += test/test_points
+bin_PROGRAMS += test/test_points
+noinst_PROGRAMS += test/test_points_fuzzy
 TEST_SRCDIR = test
-TEST_BINARY=test/test_mergex$(EXEEXT)
+TEST_BINARY=test/test_points$(EXEEXT)
 
 JSON_TEST_FILES = \
   test/data/blockfilters.json \
@@ -26,7 +26,7 @@ RAW_TEST_FILES =
 
 GENERATED_TEST_FILES = $(JSON_TEST_FILES:.json=.json.h) $(RAW_TEST_FILES:.raw=.raw.h)
 
-# test_mergex binary #
+# test_points binary #
 BITCOIN_TESTS =\
   test/arith_uint256_tests.cpp \
   test/scriptnum10.h \
@@ -96,9 +96,9 @@ BITCOIN_TESTS =\
   test/skiplist_tests.cpp \
   test/streams_tests.cpp \
   test/subsidy_tests.cpp \
-  test/test_mergex.cpp \
-  test/test_mergex.h \
-  test/test_mergex_main.cpp \
+  test/test_points.cpp \
+  test/test_points.h \
+  test/test_points_main.cpp \
   test/timedata_tests.cpp \
   test/torcontrol_tests.cpp \
   test/transaction_tests.cpp \
@@ -119,31 +119,31 @@ BITCOIN_TESTS += \
   wallet/test/coinselector_tests.cpp
 endif
 
-test_test_mergex_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
-test_test_mergex_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(TESTDEFS) $(EVENT_CFLAGS)
-test_test_mergex_LDADD =
+test_test_points_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
+test_test_points_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(TESTDEFS) $(EVENT_CFLAGS)
+test_test_points_LDADD =
 if ENABLE_WALLET
-test_test_mergex_LDADD += $(LIBBITCOIN_WALLET)
+test_test_points_LDADD += $(LIBBITCOIN_WALLET)
 endif
-test_test_mergex_LDADD += $(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CONSENSUS) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) \
+test_test_points_LDADD += $(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CONSENSUS) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) \
   $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) $(BACKTRACE_LIB) $(BOOST_LIBS) $(BOOST_UNIT_TEST_FRAMEWORK_LIB) $(LIBSECP256K1) $(EVENT_LIBS) $(EVENT_PTHREADS_LIBS)
-test_test_mergex_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+test_test_points_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 
-test_test_mergex_LDADD += $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(BLS_LIBS)
-test_test_mergex_LDFLAGS = $(LDFLAGS_WRAP_EXCEPTIONS) $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
+test_test_points_LDADD += $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(BLS_LIBS)
+test_test_points_LDFLAGS = $(LDFLAGS_WRAP_EXCEPTIONS) $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
 
 if ENABLE_ZMQ
-test_test_mergex_LDADD += $(ZMQ_LIBS)
+test_test_points_LDADD += $(ZMQ_LIBS)
 endif
 #
 
-# test_mergex_fuzzy binary #
-test_test_mergex_fuzzy_SOURCES = test/test_mergex_fuzzy.cpp
-test_test_mergex_fuzzy_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-test_test_mergex_fuzzy_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-test_test_mergex_fuzzy_LDFLAGS = $(LDFLAGS_WRAP_EXCEPTIONS) $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# test_points_fuzzy binary #
+test_test_points_fuzzy_SOURCES = test/test_points_fuzzy.cpp
+test_test_points_fuzzy_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+test_test_points_fuzzy_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+test_test_points_fuzzy_LDFLAGS = $(LDFLAGS_WRAP_EXCEPTIONS) $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
-test_test_mergex_fuzzy_LDADD = \
+test_test_points_fuzzy_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
@@ -155,10 +155,10 @@ test_test_mergex_fuzzy_LDADD = \
   $(LIBBITCOIN_CRYPTO_SHANI) \
   $(LIBSECP256K1)
 
-test_test_mergex_fuzzy_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(BACKTRACE_LIB)
+test_test_points_fuzzy_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(BACKTRACE_LIB)
 #
 
-nodist_test_test_mergex_SOURCES = $(GENERATED_TEST_FILES)
+nodist_test_test_points_SOURCES = $(GENERATED_TEST_FILES)
 
 $(BITCOIN_TESTS): $(GENERATED_TEST_FILES)
 
@@ -166,13 +166,13 @@ CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 
 CLEANFILES += $(CLEAN_BITCOIN_TEST)
 
-mergex_test: $(TEST_BINARY)
+points_test: $(TEST_BINARY)
 
-mergex_test_check: $(TEST_BINARY) FORCE
+points_test_check: $(TEST_BINARY) FORCE
 	$(MAKE) check-TESTS TESTS=$^
 
-mergex_test_clean : FORCE
-	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_mergex_OBJECTS) $(TEST_BINARY)
+points_test_clean : FORCE
+	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_points_OBJECTS) $(TEST_BINARY)
 
 check-local:
 	@echo "Running test/util/bitcoin-util-test.py..."

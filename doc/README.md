@@ -1,7 +1,7 @@
 POINTS Core
 ==========
 
-This is the official reference wallet for POINTS digital currency and comprises the backbone of the POINTS peer-to-peer network. You can [download POINTS Core](https://www.mergex.org/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for POINTS digital currency and comprises the backbone of the POINTS peer-to-peer network. You can [download POINTS Core](https://www.points.org/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
@@ -11,12 +11,12 @@ The following are some helpful notes on how to run POINTS on your native platfor
 
 Unpack the files into a directory and run:
 
-- `bin/mergex-qt` (GUI) or
-- `bin/mergexd` (headless)
+- `bin/points-qt` (GUI) or
+- `bin/pointsd` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run mergex-qt.exe.
+Unpack the files into a directory, and then run points-qt.exe.
 
 ### OS X
 
@@ -24,12 +24,12 @@ Drag POINTS-Qt to your applications folder, and then run POINTS-Qt.
 
 ### Need Help?
 
-* See the [POINTS documentation](https://docs.mergex.org)
+* See the [POINTS documentation](https://docs.points.org)
 for help and more information.
-* See the [POINTS Developer Documentation](https://mergex-docs.github.io/) 
+* See the [POINTS Developer Documentation](https://points-docs.github.io/) 
 for technical specifications and implementation details.
-* Ask for help on [POINTS Nation Discord](http://mergexchat.org)
-* Ask for help on the [POINTS Forum](https://mergex.org/forum)
+* Ask for help on [POINTS Nation Discord](http://pointschat.org)
+* Ask for help on the [POINTS Forum](https://points.org/forum)
 
 Building
 ---------------------
@@ -59,8 +59,8 @@ The POINTS Core repo's [root README](/README.md) contains relevant information o
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [POINTS Forum](https://mergex.org/forum), in the Development & Technical Discussion board.
-* Discuss on [POINTS Nation Discord](http://mergexchat.org)
+* Discuss on the [POINTS Forum](https://points.org/forum), in the Development & Technical Discussion board.
+* Discuss on [POINTS Nation Discord](http://pointschat.org)
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

@@ -392,7 +392,7 @@ void BitcoinGUI::createActions()
     coinJoinCoinsMenuAction->setToolTip(coinJoinCoinsMenuAction->statusTip());
 
     receiveCoinsMenuAction = new QAction(tr("&Receive"), this);
-    receiveCoinsMenuAction->setStatusTip(tr("Request payments (generates QR codes and mergex: URIs)"));
+    receiveCoinsMenuAction->setStatusTip(tr("Request payments (generates QR codes and points: URIs)"));
     receiveCoinsMenuAction->setToolTip(receiveCoinsMenuAction->statusTip());
 
     // These showNormalIfMinimized are needed because Send Coins and Receive Coins
@@ -465,7 +465,7 @@ void BitcoinGUI::createActions()
     usedReceivingAddressesAction->setStatusTip(tr("Show the list of used receiving addresses and labels"));
 
     openAction = new QAction(tr("Open &URI..."), this);
-    openAction->setStatusTip(tr("Open a mergex: URI or payment request"));
+    openAction->setStatusTip(tr("Open a points: URI or payment request"));
 
     showHelpMessageAction = new QAction(tr("&Command-line options"), this);
     showHelpMessageAction->setMenuRole(QAction::NoRole);
@@ -1216,7 +1216,7 @@ void BitcoinGUI::updateWidth()
         ++nButtonsVisible;
     }
     // Add 30 per button as padding and use minimum 980 which is the minimum required to show all tab's contents
-    // Use nButtonsVisible + 1 <- for the mergex logo
+    // Use nButtonsVisible + 1 <- for the points logo
     int nWidth = std::max<int>(980, (nWidthWidestButton + 30) * (nButtonsVisible + 1));
     setMinimumWidth(nWidth);
     resize(nWidth, height());

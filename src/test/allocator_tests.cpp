@@ -5,7 +5,7 @@
 #include <util.h>
 
 #include <support/allocators/secure.h>
-#include <test/test_mergex.h>
+#include <test/test_points.h>
 
 #include <memory>
 

@@ -348,7 +348,7 @@
         <translation>接收(&amp;R)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and mergex: URIs)</source>
+        <source>Request payments (generates QR codes and points: URIs)</source>
         <translation>请求付款(生成二维码和MERGEX付款协议的URI)</translation>
     </message>
     <message>
@@ -536,7 +536,7 @@
         <translation>打开 &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a mergex: URI or payment request</source>
+        <source>Open a points: URI or payment request</source>
         <translation>打开一个MERGEX协议的URI或付款请求</translation>
     </message>
     <message>
@@ -1466,9 +1466,9 @@
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/mergex/</source>
+https://www.transifex.com/projects/p/points/</source>
         <translation>缺少相关语言或翻译不完整？请到这里协助翻译：
-https://www.transifex.com/projects/p/mergex/</translation>
+https://www.transifex.com/projects/p/points/</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1733,7 +1733,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>支付请求出错</translation>
     </message>
     <message>
-        <source>Cannot start mergex: click-to-pay handler</source>
+        <source>Cannot start points: click-to-pay handler</source>
         <translation>无法启动MERGEX程序：click-to-pay handler</translation>
     </message>
     <message>
@@ -2730,7 +2730,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>如果自定手续费设定为1000 XMERGEX，而交易信息只有250字节的话，那么选择"每千字节"就只会支付250 XMERGEX的手续费，&lt;br /&gt;而"至少"会支付1000 XMERGEX。但如果交易信息大于一千字节,那么两者都要按每千字节付费。</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for mergex transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for points transactions than the network can process.</source>
         <translation>当交易量少于区块可容纳的空间时，只需支付最低手续费。&lt;br /&gt;但当交易量的需求增长到超过总体网络可处理的量时，可能会造成一笔一直不被确认的交易。</translation>
     </message>
     <message>
@@ -2997,7 +2997,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>消息：</translation>
     </message>
     <message>
-        <source>A message that was attached to the mergex: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
+        <source>A message that was attached to the points: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
         <translation>附加在MERGEX付款协议URI中的信息，会和交易内容一并存储，可供您参考。提示：此信息不会发送到MERGEX网络上。</translation>
     </message>
     <message>
@@ -3737,7 +3737,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
     </message>
     </context>
 <context>
-    <name>mergex-core</name>
+    <name>points-core</name>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>错误：监听外来连接失败(监听回馈错误 %s)</translation>

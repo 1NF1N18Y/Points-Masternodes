@@ -119,7 +119,7 @@ public:
         int h = 0;
         int w = fm.width(BitcoinUnits::format(BitcoinUnits::MERGEX, BitcoinUnits::maxMoney(), false, BitcoinUnits::separatorAlways));
         w += 2; // cursor blinking space
-        w += GUIUtil::mergexThemeActive() ? 24 : 0; // counteract padding from css
+        w += GUIUtil::pointsThemeActive() ? 24 : 0; // counteract padding from css
         return QSize(w, h);
     }
 

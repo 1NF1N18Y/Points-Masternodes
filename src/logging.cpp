@@ -150,7 +150,7 @@ bool GetLogCategory(uint64_t *f, const std::string *str)
             *f = BCLog::ALL;
             return true;
         }
-        if (*str == "mergex") {
+        if (*str == "points") {
             *f = BCLog::CHAINLOCKS
                  | BCLog::GOBJECT
                  | BCLog::INSTANTSEND

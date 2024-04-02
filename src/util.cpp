@@ -99,8 +99,8 @@ bool fDisableGovernance = false;
 */
 int nWalletBackups = 10;
 
-const char * const BITCOIN_CONF_FILENAME = "mergex.conf";
-const char * const BITCOIN_PID_FILENAME = "mergexd.pid";
+const char * const BITCOIN_CONF_FILENAME = "points.conf";
+const char * const BITCOIN_PID_FILENAME = "pointsd.pid";
 
 ArgsManager gArgs;
 
@@ -291,7 +291,7 @@ public:
         std::pair<bool,std::string> found_result(false, std::string());
 
         // We pass "true" to GetArgHelper in order to return the last
-        // argument value seen from the command line (so "mergexd -foo=bar
+        // argument value seen from the command line (so "pointsd -foo=bar
         // -foo=baz" gives GetArg(am,"foo")=={true,"baz"}
         found_result = GetArgHelper(am.m_override_args, arg, true);
         if (found_result.first) {
@@ -665,7 +665,7 @@ fs::path GetDefaultDataDir()
     // Windows < Vista: C:\Documents and Settings\Username\Application Data\MERGEX
     // Windows >= Vista: C:\Users\Username\AppData\Roaming\MERGEX
     // Mac: ~/Library/Application Support/MERGEX
-    // Unix: ~/.mergex
+    // Unix: ~/.points
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "MERGEX";
@@ -681,7 +681,7 @@ fs::path GetDefaultDataDir()
     return pathRet / "Library/Application Support/MERGEX";
 #else
     // Unix
-    return pathRet / ".mergex";
+    return pathRet / ".points";
 #endif
 #endif
 }
@@ -807,7 +807,7 @@ void ArgsManager::ReadConfigFile(const std::string& confPath)
     if (stream.good()) {
         ReadConfigStream(stream);
     } else {
-        // Create an empty mergex.conf if it does not excist
+        // Create an empty points.conf if it does not excist
         FILE* configFile = fopen(GetConfigFile(confPath).string().c_str(), "a");
         if (configFile != nullptr)
             fclose(configFile);

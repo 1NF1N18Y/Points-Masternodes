@@ -14,7 +14,7 @@
 #include <util.h>
 #include <validation.h>
 
-#include <test/test_mergex.h>
+#include <test/test_points.h>
 
 #include <stdint.h>
 

@@ -8,7 +8,7 @@
 #include <script/script.h>
 #include <script/script_error.h>
 #include <script/standard.h>
-#include <test/test_mergex.h>
+#include <test/test_points.h>
 
 #include <boost/test/unit_test.hpp>
 

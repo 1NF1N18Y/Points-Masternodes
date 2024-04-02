@@ -348,7 +348,7 @@
         <translation>&amp;Ontvangen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and mergex: URIs)</source>
+        <source>Request payments (generates QR codes and points: URIs)</source>
         <translation>Vraag betaling aan (genereert QR-codes en MERGEX: URI's)</translation>
     </message>
     <message>
@@ -540,8 +540,8 @@
         <translation>Open &amp;URI</translation>
     </message>
     <message>
-        <source>Open a mergex: URI or payment request</source>
-        <translation>Open een mergex: URI of betalingsaanvraag</translation>
+        <source>Open a points: URI or payment request</source>
+        <translation>Open een points: URI of betalingsaanvraag</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1544,9 +1544,9 @@
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/mergex/</source>
+https://www.transifex.com/projects/p/points/</source>
         <translation>Is een een taal te kort of een vertaling onvolledig ? Help de vertaling hier: 
-https://www.transifex.com/projects/p/mergex/</translation>
+https://www.transifex.com/projects/p/points/</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1840,7 +1840,7 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
         <translation>Fout bij betalingsverzoek</translation>
     </message>
     <message>
-        <source>Cannot start mergex: click-to-pay handler</source>
+        <source>Cannot start points: click-to-pay handler</source>
         <translation>Kan MERGEX niet starten: click-to-pay handler</translation>
     </message>
     <message>
@@ -1848,8 +1848,8 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
         <translation>URI-afhandeling</translation>
     </message>
     <message>
-        <source>'mergex://' is not a valid URI. Use 'mergex:' instead.</source>
-        <translation>'mergex://' is geen geldige URI. Gebruik in plaats daarvan 'mergex:'.</translation>
+        <source>'points://' is not a valid URI. Use 'points:' instead.</source>
+        <translation>'points://' is geen geldige URI. Gebruik in plaats daarvan 'points:'.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -2870,7 +2870,7 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het MERGEX netw
         <translation>Als de aangepaste vergoeding is ingesteld op 1000 XMERGEX en de transactie is maar 250 bytes, dan wordt bij "per kilobyte" 250 XMERGEX aan toeslag berekend, &lt;br /&gt;terwijl er bij "tenminste" 1000 XMERGEX worden berekend. Voor transacties die groter zijn dan een kilobyte, wordt in beide gevallen per kilobyte de toeslag berekend.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for mergex transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for points transactions than the network can process.</source>
         <translation>Het betalen van de minimale vergoeding is prima zo lang er minder transactie volume is dan ruimte in de blocks. &lt;br /&gt;Maar houd er rekening mee dat dit kan eindigen in een nooit bevestigde transactie zodra er meer vraag is voor MERGEX transacties fdan het netwerk kan verwerken.</translation>
     </message>
     <message>
@@ -3161,8 +3161,8 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het MERGEX netw
         <translation>Bericht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the mergex: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
-        <translation>Een boodschap die was bijgevoegd aan de mergex: URI die met de transactie voor uw referentie wordt opgeslagen. Opmerking: Dit bericht zal niet over het MERGEX netwerk worden verzonden.</translation>
+        <source>A message that was attached to the points: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
+        <translation>Een boodschap die was bijgevoegd aan de points: URI die met de transactie voor uw referentie wordt opgeslagen. Opmerking: Dit bericht zal niet over het MERGEX netwerk worden verzonden.</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -3953,7 +3953,7 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het MERGEX netw
     </message>
 </context>
 <context>
-    <name>mergex-core</name>
+    <name>points-core</name>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>Fout: luisteren naar binnenkomende verbindingen mislukt (luisteren gaf foutmelding %s)</translation>

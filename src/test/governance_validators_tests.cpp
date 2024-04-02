@@ -7,7 +7,7 @@
 #include <test/data/proposals_valid.json.h>
 #include <test/data/proposals_invalid.json.h>
 
-#include <test/test_mergex.h>
+#include <test/test_points.h>
 
 #include <iostream>
 #include <fstream>

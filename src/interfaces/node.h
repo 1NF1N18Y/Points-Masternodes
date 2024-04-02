@@ -34,7 +34,7 @@ namespace interfaces {
 class Handler;
 class Wallet;
 
-//! Interface for the src/evo part of a mergex node (mergexd process).
+//! Interface for the src/evo part of a points node (pointsd process).
 class EVO
 {
 public:
@@ -42,7 +42,7 @@ public:
     virtual CDeterministicMNList getListAtChainTip() = 0;
 };
 
-//! Interface for the src/llmq part of a mergex node (mergexd process).
+//! Interface for the src/llmq part of a points node (pointsd process).
 class LLMQ
 {
 public:
@@ -50,7 +50,7 @@ public:
     virtual size_t getInstantSentLockCount() = 0;
 };
 
-//! Interface for the src/masternode part of a mergex node (mergexd process).
+//! Interface for the src/masternode part of a points node (pointsd process).
 namespace Masternode
 {
 class Sync
@@ -88,7 +88,7 @@ public:
 };
 }
 
-//! Top-level interface for a mergex node (mergexd process).
+//! Top-level interface for a points node (pointsd process).
 class Node
 {
 public:

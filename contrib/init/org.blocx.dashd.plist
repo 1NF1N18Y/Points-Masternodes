@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>org.mergex.mergexd</string>
+	<string>org.points.pointsd</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/mergexd</string>
+		<string>/usr/local/bin/pointsd</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>

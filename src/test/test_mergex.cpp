@@ -2,7 +2,7 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include <test/test_mergex.h>
+#include <test/test_points.h>
 
 #include <chainparams.h>
 #include <consensus/consensus.h>
@@ -53,7 +53,7 @@ extern bool fPrintToConsole;
 extern void noui_connect();
 
 BasicTestingSetup::BasicTestingSetup(const std::string& chainName)
-    : m_path_root(fs::temp_directory_path() / "test_mergex" / strprintf("%lu_%i", (unsigned long)GetTime(), (int)(InsecureRandRange(1 << 30))))
+    : m_path_root(fs::temp_directory_path() / "test_points" / strprintf("%lu_%i", (unsigned long)GetTime(), (int)(InsecureRandRange(1 << 30))))
 {
     SHA256AutoDetect();
     RandomInit();

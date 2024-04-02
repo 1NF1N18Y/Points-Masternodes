@@ -97,7 +97,7 @@ For example:
   ./github-merge.py 3077
 
 (in any git repository) will help you merge pull request #3077 for the
-mergexpay/mergex repository.
+pointspay/points repository.
 
 What it does:
 * Fetch master and the pull request.
@@ -117,14 +117,14 @@ Setup
 ---------
 Configuring the github-merge tool for the bitcoin repository is done in the following way:
 
-    git config githubmerge.repository mergexpay/mergex
+    git config githubmerge.repository pointspay/points
     git config githubmerge.testcmd "make -j4 check" (adapt to whatever you want to use for testing)
     git config --global user.signingkey mykeyid (if you want to GPG sign)
 
 optimize-pngs.py
 ================
 
-A script to optimize png files in the mergex
+A script to optimize png files in the points
 repository (requires pngcrush).
 
 security-check.py and test-security-check.py
@@ -147,10 +147,10 @@ If only supported symbols are used the return value will be 0 and the output wil
 
 If there are 'unsupported' symbols, the return value will be 1 a list like this will be printed:
 
-    .../64/test_mergex: symbol memcpy from unsupported version GLIBC_2.14
-    .../64/test_mergex: symbol __fdelt_chk from unsupported version GLIBC_2.15
-    .../64/test_mergex: symbol std::out_of_range::~out_of_range() from unsupported version GLIBCXX_3.4.15
-    .../64/test_mergex: symbol _ZNSt8__detail15_List_nod from unsupported version GLIBCXX_3.4.15
+    .../64/test_points: symbol memcpy from unsupported version GLIBC_2.14
+    .../64/test_points: symbol __fdelt_chk from unsupported version GLIBC_2.15
+    .../64/test_points: symbol std::out_of_range::~out_of_range() from unsupported version GLIBCXX_3.4.15
+    .../64/test_points: symbol _ZNSt8__detail15_List_nod from unsupported version GLIBCXX_3.4.15
 
 update-translations.py
 ======================

@@ -1,6 +1,6 @@
 # POINTS.
 
-http://www.mergexchain.com
+http://www.pointschain.com
 
 What is POINTS. ? <br><br>
 Join the MergeX Gaming and Earning Revolution!
@@ -33,4 +33,4 @@ https://github.com/tpruvot/cpuminer-multi/releases  - CPU Miner
 
 # MASTERNODES ?
 
-Documentation: https://mergex.gitbook.io/mergex.-documentation/
+Documentation: https://points.gitbook.io/points.-documentation/

@@ -2,7 +2,7 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include <test/test_mergex.h>
+#include <test/test_points.h>
 
 #include <bls/bls.h>
 #include <evo/simplifiedmns.h>

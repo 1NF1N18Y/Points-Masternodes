@@ -114,7 +114,7 @@ namespace GUIUtil
     // Setup appearance settings if not done yet
     void setupAppearance(QWidget* parent, OptionsModel* model);
 
-    // Parse "mergex:" URI into recipient object, return true on successful parsing
+    // Parse "points:" URI into recipient object, return true on successful parsing
     bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out);
     bool parseBitcoinURI(QString uri, SendCoinsRecipient *out);
     bool validateBitcoinURI(const QString& uri);
@@ -187,7 +187,7 @@ namespace GUIUtil
     // Open debug.log
     void openDebugLogfile();
 
-    // Open mergex.conf
+    // Open points.conf
     void openConfigfile();
 
     // Browse backup folder
@@ -319,7 +319,7 @@ namespace GUIUtil
     /** get font size with GUIUtil::fontScale applied */
     double getScaledFontSize(int nSize);
 
-    /** Load mergex specific appliciation fonts */
+    /** Load points specific appliciation fonts */
     bool loadFonts();
     /** Check if the fonts have been loaded successfully */
     bool fontsLoaded();
@@ -363,8 +363,8 @@ namespace GUIUtil
     /** Return the name of the currently active theme.*/
     QString getActiveTheme();
 
-    /** Check if a mergex specific theme is activated (light/dark).*/
-    bool mergexThemeActive();
+    /** Check if a points specific theme is activated (light/dark).*/
+    bool pointsThemeActive();
 
     /** Load the theme and update all UI elements according to the appearance settings. */
     void loadTheme(bool fForce = false);

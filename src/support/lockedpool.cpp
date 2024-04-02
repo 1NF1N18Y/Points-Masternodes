@@ -6,7 +6,7 @@
 #include <support/cleanse.h>
 
 #if defined(HAVE_CONFIG_H)
-#include <config/mergex-config.h>
+#include <config/points-config.h>
 #endif
 
 #ifdef WIN32

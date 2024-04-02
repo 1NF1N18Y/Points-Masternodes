@@ -11,7 +11,7 @@
   </array>
 
   <key>CFBundleIconFile</key>
-  <string>mergex.icns</string>
+  <string>points.icns</string>
 
   <key>CFBundlePackageType</key>
   <string>APPL</string>
@@ -35,7 +35,7 @@
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.mergex.POINTS-Qt</string>
+  <string>org.points.POINTS-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -43,10 +43,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.mergex.POINTSPayment</string>
+      <string>org.points.POINTSPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>mergex</string>
+        <string>points</string>
       </array>
     </dict>
   </array>
@@ -55,7 +55,7 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.mergex.paymentrequest</string>
+      <string>org.points.paymentrequest</string>
       <key>UTTypeDescription</key>
       <string>POINTS payment request</string>
       <key>UTTypeConformsTo</key>
@@ -65,10 +65,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-mergex-payment-request</string>
+        <string>application/x-points-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>mergexpaymentrequest</string>
+          <string>pointspaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -81,7 +81,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.mergex.paymentrequest</string>
+        <string>org.points.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

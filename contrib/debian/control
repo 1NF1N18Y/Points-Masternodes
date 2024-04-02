@@ -1,8 +1,8 @@
-Source: mergex
+Source: points
 Section: utils
 Priority: optional
-Maintainer: Holger Schinzel <holger@mergex.org>
-Uploaders: Holger Schinzel <holger@mergex.org>
+Maintainer: Holger Schinzel <holger@points.org>
+Uploaders: Holger Schinzel <holger@points.org>
 Build-Depends: debhelper,
  devscripts,
  automake,
@@ -26,11 +26,11 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: https://www.mergex.org/
-Vcs-Git: git://github.com/mergexpay/mergex.git
-Vcs-Browser: https://github.com/mergexpay/mergex
+Homepage: https://www.points.org/
+Vcs-Git: git://github.com/pointspay/points.git
+Vcs-Browser: https://github.com/pointspay/points
 
-Package: mergexd
+Package: pointsd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
@@ -40,10 +40,10 @@ Description: peer-to-peer network based digital currency - daemon
  and issuing money are carried out collectively by the network. POINTS Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides the daemon, mergexd, and the CLI tool
- mergex-cli to interact with the daemon.
+ This package provides the daemon, pointsd, and the CLI tool
+ points-cli to interact with the daemon.
 
-Package: mergex-qt
+Package: points-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
@@ -55,7 +55,7 @@ Description: peer-to-peer network based digital currency - Qt GUI
  .
  This package provides POINTS-Qt, a GUI for POINTS based on Qt.
 
-Package: mergex-tx
+Package: points-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
@@ -65,6 +65,6 @@ Description: peer-to-peer digital currency - standalone transaction tool
  and issuing money are carried out collectively by the network. POINTS Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides mergex-tx, a command-line transaction creation
- tool which can be used without a mergex daemon.  Some means of
+ This package provides points-tx, a command-line transaction creation
+ tool which can be used without a points daemon.  Some means of
  exchanging minimal transaction data with peers is still required.

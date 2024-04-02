@@ -348,7 +348,7 @@
         <translation>&amp;Al</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and mergex: URIs)</source>
+        <source>Request payments (generates QR codes and points: URIs)</source>
         <translation>Ödeme talep et (QR kodu ve MERGEX URI'si oluşturur)</translation>
     </message>
     <message>
@@ -540,7 +540,7 @@
         <translation>&amp;URI Aç...</translation>
     </message>
     <message>
-        <source>Open a mergex: URI or payment request</source>
+        <source>Open a points: URI or payment request</source>
         <translation>Bir MERGEX: bağlantısı ya da ödeme talebi aç</translation>
     </message>
     <message>
@@ -1544,9 +1544,9 @@
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/mergex/</source>
+https://www.transifex.com/projects/p/points/</source>
         <translation>Diliniz mevcut değil veya çeviri eksik mi? Buradan çevirilere katkıda bulunun:
-https://www.transifex.com/projects/p/mergex/</translation>
+https://www.transifex.com/projects/p/points/</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1839,7 +1839,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Ödeme talebi hatası</translation>
     </message>
     <message>
-        <source>Cannot start mergex: click-to-pay handler</source>
+        <source>Cannot start points: click-to-pay handler</source>
         <translation>MERGEX başlatılamadı: tıkla-ve-öde yöneticisi</translation>
     </message>
     <message>
@@ -1847,8 +1847,8 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>URI yönetimi</translation>
     </message>
     <message>
-        <source>'mergex://' is not a valid URI. Use 'mergex:' instead.</source>
-        <translation>'mergex://' geçerli bir URI değil. Bunun yerine 'mergex:' kullanın.</translation>
+        <source>'points://' is not a valid URI. Use 'points:' instead.</source>
+        <translation>'points://' geçerli bir URI değil. Bunun yerine 'points:' kullanın.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -2868,8 +2868,8 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Eğer özel ücret 1000 duff olarak belirlendiyse ve işlem sadece 250 bayt ise "kilobayt başına" ücret olarak sadece 250 duff ödersiniz,&lt;br /&gt;bu da "en az" 1000 duff öder. Bir kilobayttan büyük işlemler için ikisi de kilobayt başına ödeme yapar.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for mergex transactions than the network can process.</source>
-        <translation>Bloklardaki alandan daha düşük işlem hacmi var olduğu sürece sadece minimum ücreti ödemek yeterli olur.&lt;br /&gt;Ama ağın işleyebileceğinden daha fazla mergex işlemi talebi olursa, bunun işlemlerin asla teyit edilememesi gibi bir sonucu olabileceğini unutmayın.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for points transactions than the network can process.</source>
+        <translation>Bloklardaki alandan daha düşük işlem hacmi var olduğu sürece sadece minimum ücreti ödemek yeterli olur.&lt;br /&gt;Ama ağın işleyebileceğinden daha fazla points işlemi talebi olursa, bunun işlemlerin asla teyit edilememesi gibi bir sonucu olabileceğini unutmayın.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -3159,7 +3159,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
         <translation>Mesaj:</translation>
     </message>
     <message>
-        <source>A message that was attached to the mergex: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
+        <source>A message that was attached to the points: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
         <translation>Referans için MERGEX: URI'siyle iliştirilmiş işlemle birlikte depolanacak bir ileti. Not: Bu mesaj MERGEX ağı üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
@@ -3951,7 +3951,7 @@ https://www.transifex.com/projects/p/mergex/</translation>
     </message>
 </context>
 <context>
-    <name>mergex-core</name>
+    <name>points-core</name>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>Hata: İçeri gelen bağlantıların dinlenmesi başarısız oldu (dinleme %s hatasını verdi)</translation>

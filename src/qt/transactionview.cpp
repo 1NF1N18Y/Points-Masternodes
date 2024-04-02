@@ -542,7 +542,7 @@ void TransactionView::showAddressQRCode()
     QRDialog* dialog = new QRDialog(this);
 
     dialog->setAttribute(Qt::WA_DeleteOnClose);
-    dialog->setInfo(tr("QR code"), "mergex:"+strAddress, "", strAddress);
+    dialog->setInfo(tr("QR code"), "points:"+strAddress, "", strAddress);
     dialog->show();
 }
 

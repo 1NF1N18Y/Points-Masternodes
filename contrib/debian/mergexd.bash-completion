@@ -1,2 +1,2 @@
-contrib/mergexd.bash-completion	mergexd
-contrib/mergex-cli.bash-completion    mergex-cli
+contrib/pointsd.bash-completion	pointsd
+contrib/points-cli.bash-completion    points-cli

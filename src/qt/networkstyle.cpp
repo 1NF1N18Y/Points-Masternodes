@@ -71,7 +71,7 @@ NetworkStyle::NetworkStyle(const QString &_appName, const int iconColorHueShift,
     // Allow for separate UI settings for testnets
     QApplication::setApplicationName(appName);
     // load pixmap
-    QPixmap appIconPixmap(":/icons/mergex");
+    QPixmap appIconPixmap(":/icons/points");
 
     if(iconColorHueShift != 0 && iconColorSaturationReduction != 0)
     {
