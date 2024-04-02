@@ -433,10 +433,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0x4D; // M
-        pchMessageStart[1] = 0x52; // R
-        pchMessageStart[2] = 0x47; // G
-        pchMessageStart[3] = 0x58; // X
+        pchMessageStart[0] = 0x50; // P
+        pchMessageStart[1] = 0x4E; // N
+        pchMessageStart[2] = 0x54; // T
+        pchMessageStart[3] = 0x53; // S
         nDefaultPort = 8812;
         nPruneAfterHeight = 100000;
 
@@ -471,22 +471,21 @@ public:
         // This is fine at runtime as we'll fall back to using them as a oneshot if they don't support the
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
-        //TODO: add a dns seeder for MergeX
-        vSeeds.emplace_back("explorer.pointschain.com");
+        //TODO: add a dns seeder for Points
         // vSeeds.emplace_back("node2.points.space");
         // vSeeds.emplace_back("node3.points.space");
         // vSeeds.emplace_back("node4.points.space");
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,50); // M prefix
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,50); // M prefix
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,155);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,55);  
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,117); 
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,107); 
         // POINTS BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         // POINTS BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
-        // POINTS BIP44 coin type is '6531'
-        nExtCoinType = 6531;
+        // POINTS BIP44 coin type is '7712'
+        nExtCoinType = 7712;
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
