@@ -50,11 +50,11 @@ config file): *Needed for Tor version 0.2.7.0 and older versions of Tor only. Fo
 versions of Tor see [Section 4](#4-automatically-listen-on-tor).*
 
 	HiddenServiceDir /var/lib/tor/mergex-service/
-	HiddenServicePort 3381 127.0.0.1:3381
+	HiddenServicePort 8812 127.0.0.1:8812
 	HiddenServicePort 23380 127.0.0.1:23380
 
 The directory can be different of course, but (both) port numbers should be equal to
-your mergexd's P2P listen port (3381 by default).
+your mergexd's P2P listen port (8812 by default).
 
 	-externalip=X   You can tell POINTS Core about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
@@ -89,7 +89,7 @@ as well, use `discover` instead:
 
 	./mergexd ... -discover
 
-and open port 3381 on your firewall (or use -upnp).
+and open port 8812 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
