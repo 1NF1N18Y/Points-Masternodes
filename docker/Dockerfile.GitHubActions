@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
-LABEL maintainer="MERGEX Developers <dev@mergex.org>"
-LABEL description="Dockerised MERGEX"
+LABEL maintainer="POINTS Developers <dev@mergex.org>"
+LABEL description="Dockerised POINTS"
 
 ARG USER_ID
 ARG GROUP_ID

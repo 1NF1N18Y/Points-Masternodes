@@ -68,9 +68,9 @@ can then be controlled by group membership.
 ### Mac OS X
 
 Binary:              `/usr/local/bin/mergexd`  
-Configuration file:  `~/Library/Application Support/MERGEX/mergex.conf`  
-Data directory:      `~/Library/Application Support/MERGEX`  
-Lock file:           `~/Library/Application Support/MERGEX/.lock`  
+Configuration file:  `~/Library/Application Support/POINTS/mergex.conf`  
+Data directory:      `~/Library/Application Support/POINTS`  
+Lock file:           `~/Library/Application Support/POINTS/.lock`  
 
 Installing Service Configuration
 -----------------------------------
@@ -108,7 +108,7 @@ use old versions of Upstart and do not supply the start-stop-daemon utility.
 Copy mergexd.init to /etc/init.d/mergexd. Test by running `service mergexd start`.
 
 Using this script, you can adjust the path and flags to the mergexd program by
-setting the MERGEXD and FLAGS environment variables in the file
+setting the POINTSD and FLAGS environment variables in the file
 /etc/sysconfig/mergexd. You can also use the DAEMONOPTS environment variable here.
 
 ### Mac OS X

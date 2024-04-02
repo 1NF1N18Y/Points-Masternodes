@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MERGEX_CRYPTO_BLS_IES_H
-#define MERGEX_CRYPTO_BLS_IES_H
+#ifndef POINTS_CRYPTO_BLS_IES_H
+#define POINTS_CRYPTO_BLS_IES_H
 
 #include <bls/bls.h>
 #include <streams.h>
@@ -166,4 +166,4 @@ public:
     }
 };
 
-#endif // MERGEX_CRYPTO_BLS_IES_H
+#endif // POINTS_CRYPTO_BLS_IES_H

@@ -3,7 +3,7 @@ Shared Libraries
 
 ## mergexconsensus
 
-The purpose of this library is to make the verification functionality that is critical to MERGEX's consensus available to other applications, e.g. to language bindings.
+The purpose of this library is to make the verification functionality that is critical to POINTS's consensus available to other applications, e.g. to language bindings.
 
 ### API
 

@@ -11,7 +11,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between mergex-cli and mergexd)
- * of a given instance of the MERGEX system.
+ * of a given instance of the POINTS system.
  */
 class CBaseChainParams
 {

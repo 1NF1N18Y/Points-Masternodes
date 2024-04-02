@@ -108,7 +108,7 @@ EXPECTED_HOLDER_NAMES = [
     "Jan-Klaas Kollhof\n",
     "Sam Rushing\n",
     "ArtForz -- public domain half-a-node\n",
-    "The MERGEX Core developers\n",
+    "The POINTS Core developers\n",
 ]
 
 DOMINANT_STYLE_COMPILED = {}
@@ -281,7 +281,7 @@ Usage:
     $ ./copyright_header.py report <base_directory> [verbose]
 
 Arguments:
-    <base_directory> - The base directory of a MERGEX Core source code repository.
+    <base_directory> - The base directory of a POINTS Core source code repository.
     [verbose] - Includes a list of every file of each subcategory in the report.
 """
 
@@ -344,7 +344,7 @@ def write_file_lines(filename, file_lines):
 COPYRIGHT = 'Copyright \(c\)'
 YEAR = "20[0-9][0-9]"
 YEAR_RANGE = '(%s)(-%s)?' % (YEAR, YEAR)
-HOLDER = 'The MERGEX Core developers'
+HOLDER = 'The POINTS Core developers'
 UPDATEABLE_LINE_COMPILED = re.compile(' '.join([COPYRIGHT, YEAR_RANGE, HOLDER]))
 
 def get_updatable_copyright_line(file_lines):
@@ -437,7 +437,7 @@ Usage:
     $ ./copyright_header.py update <base_directory>
 
 Arguments:
-    <base_directory> - The base directory of MERGEX Core source code repository.
+    <base_directory> - The base directory of POINTS Core source code repository.
 """
 
 def print_file_action_message(filename, action):
@@ -559,7 +559,7 @@ Usage:
     $ ./copyright_header.py insert <file>
 
 Arguments:
-    <file> - A source file in the MERGEX Core repository.
+    <file> - A source file in the POINTS Core repository.
 """
 
 def insert_cmd(argv):

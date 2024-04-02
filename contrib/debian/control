@@ -34,10 +34,10 @@ Package: mergexd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- MERGEX is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. MERGEX uses peer-to-peer
+ POINTS is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. POINTS uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. MERGEX Core
+ and issuing money are carried out collectively by the network. POINTS Core
  is the name of the open source software which enables the use of this currency.
  .
  This package provides the daemon, mergexd, and the CLI tool
@@ -47,22 +47,22 @@ Package: mergex-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- MERGEX is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. MERGEX uses peer-to-peer
+ POINTS is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. POINTS uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. MERGEX Core
+ and issuing money are carried out collectively by the network. POINTS Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides MERGEX-Qt, a GUI for MERGEX based on Qt.
+ This package provides POINTS-Qt, a GUI for POINTS based on Qt.
 
 Package: mergex-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
- MERGEX is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. MERGEX uses peer-to-peer
+ POINTS is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. POINTS uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. MERGEX Core
+ and issuing money are carried out collectively by the network. POINTS Core
  is the name of the open source software which enables the use of this currency.
  .
  This package provides mergex-tx, a command-line transaction creation

@@ -335,11 +335,11 @@ public:
         consensus.nInstantSendConfirmationsRequired = 4;
         consensus.nInstantSendKeepLock = 24;
         consensus.nBudgetPaymentsStartBlock = 99999999;
-        consensus.nBudgetPaymentsCycleBlocks = 14600;
+        consensus.nBudgetPaymentsCycleBlocks = 99999999;
         consensus.nBudgetPaymentsWindowBlocks = 100;
         consensus.nSuperblockStartBlock = 99999999; 
         consensus.nSuperblockStartHash = uint256();
-        consensus.nSuperblockCycle = 14600;
+        consensus.nSuperblockCycle = 99999999;
         consensus.nGovernanceMinQuorum = 10;
         consensus.nGovernanceFilterElements = 20000;
         consensus.nMasternodeMinimumConfirmations = 6;
@@ -443,7 +443,7 @@ public:
         genesis = CreateGenesisBlock(1710107302, 1951866, 0x1e0ffff0, 1, 525 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         // calculate main genesis block
-        // consensus.hashGenesisBlock = uint256S("0x00");
+        consensus.hashGenesisBlock = uint256S("0x00");
         if (true && (genesis.GetHash() != consensus.hashGenesisBlock)) {
 		std::cout << std::string("Calculating main genesis block...\n");
             arith_uint256 hashTarget = arith_uint256().SetCompact(genesis.nBits);
@@ -480,12 +480,12 @@ public:
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,50); // M prefix
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,50); // M prefix
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,155);
-        // MERGEX BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
+        // POINTS BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
-        // MERGEX BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
+        // POINTS BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
-        // MERGEX BIP44 coin type is '6531'
+        // POINTS BIP44 coin type is '6531'
         nExtCoinType = 6531;
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
@@ -674,12 +674,12 @@ public:
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,76);
         // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,203);
-        // Testnet MERGEX BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Testnet POINTS BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
-        // Testnet MERGEX BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Testnet POINTS BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
-        // Testnet MERGEX BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet POINTS BIP44 coin type is '1' (All coin's testnet default)
         nExtCoinType = 1;
 
         // long living quorum params
@@ -868,12 +868,12 @@ public:
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,76);
         // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,203);
-        // Testnet MERGEX BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Testnet POINTS BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
-        // Testnet MERGEX BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Testnet POINTS BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
-        // Testnet MERGEX BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet POINTS BIP44 coin type is '1' (All coin's testnet default)
         nExtCoinType = 1;
 
         // long living quorum params
@@ -1063,18 +1063,18 @@ public:
             0
         };
 
-        // Regtest MERGEX addresses start with 'y'
+        // Regtest POINTS addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,75);
-        // Regtest MERGEX script addresses start with '8' or '9'
+        // Regtest POINTS script addresses start with '8' or '9'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,76);
         // Regtest private keys start with '9' or 'c' (Bitcoin defaults)
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,203);
-        // Regtest MERGEX BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Regtest POINTS BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
-        // Regtest MERGEX BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Regtest POINTS BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
-        // Regtest MERGEX BIP44 coin type is '1' (All coin's testnet default)
+        // Regtest POINTS BIP44 coin type is '1' (All coin's testnet default)
         nExtCoinType = 1;
 
         // long living quorum params

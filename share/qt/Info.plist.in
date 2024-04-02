@@ -26,16 +26,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>MERGEX-Qt</string>
+  <string>POINTS-Qt</string>
 
   <key>CFBundleName</key>
-  <string>MERGEX-Qt</string>
+  <string>POINTS-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.mergex.MERGEX-Qt</string>
+  <string>org.mergex.POINTS-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -43,7 +43,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.mergex.MERGEXPayment</string>
+      <string>org.mergex.POINTSPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>mergex</string>
@@ -57,7 +57,7 @@
       <key>UTTypeIdentifier</key>
       <string>org.mergex.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>MERGEX payment request</string>
+      <string>POINTS payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>

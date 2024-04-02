@@ -1,5 +1,5 @@
 # Linearize
-Construct a linear, no-fork, best version of the MERGEX blockchain. The scripts
+Construct a linear, no-fork, best version of the POINTS blockchain. The scripts
 run using Python 3 but are compatible with Python 2.
 
 ## Step 0: Install mergex_hash

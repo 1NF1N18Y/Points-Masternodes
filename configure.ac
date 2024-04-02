@@ -7,8 +7,8 @@ define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2024)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[MERGEX]])
-AC_INIT([MERGEX],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/mergexpay/mergex/issues],[mergex],[https://mergex.org/])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[POINTS]])
+AC_INIT([POINTS],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/mergexpay/mergex/issues],[mergex],[https://mergex.org/])
 AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/mergex-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
@@ -27,9 +27,9 @@ fi
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef MERGEX_CONFIG_H])
-AH_TOP([#define MERGEX_CONFIG_H])
-AH_BOTTOM([#endif //MERGEX_CONFIG_H])
+AH_TOP([#ifndef POINTS_CONFIG_H])
+AH_TOP([#define POINTS_CONFIG_H])
+AH_BOTTOM([#endif //POINTS_CONFIG_H])
 
 dnl faketime breaks configure and is only needed for make. Disable it here.
 unset FAKETIME

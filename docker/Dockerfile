@@ -1,6 +1,6 @@
 FROM phusion/baseimage:bionic-1.0.0
-LABEL maintainer="MERGEX Developers <dev@mergex.org>"
-LABEL description="Dockerised MERGEX, built from Travis"
+LABEL maintainer="POINTS Developers <dev@mergex.org>"
+LABEL description="Dockerised POINTS, built from Travis"
 
 ARG USER_ID
 ARG GROUP_ID

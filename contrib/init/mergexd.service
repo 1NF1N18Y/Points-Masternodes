@@ -8,7 +8,7 @@
 # /etc/mergex/mergex.conf
 
 [Unit]
-Description=MERGEX daemon
+Description=POINTS daemon
 After=network.target
 
 [Service]

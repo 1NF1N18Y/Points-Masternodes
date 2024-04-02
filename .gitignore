@@ -86,7 +86,7 @@ libconftest.dylib*
 *.qm
 Makefile
 mergex-qt
-MERGEX-Qt.app
+POINTS-Qt.app
 background.tiff*
 !/depends/Makefile
 

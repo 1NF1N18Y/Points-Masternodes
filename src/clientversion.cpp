@@ -12,7 +12,7 @@
  * for both mergexd and mergex-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("MERGEX Core");
+const std::string CLIENT_NAME("POINTS Core");
 
 /**
  * Client version number

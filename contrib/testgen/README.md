@@ -1,6 +1,6 @@
 ### TestGen ###
 
-Utilities to generate test vectors for the data-driven MERGEX tests.
+Utilities to generate test vectors for the data-driven POINTS tests.
 
 Usage: 
 

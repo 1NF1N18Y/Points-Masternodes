@@ -1,11 +1,11 @@
-MERGEX Core
+POINTS Core
 ==========
 
-This is the official reference wallet for MERGEX digital currency and comprises the backbone of the MERGEX peer-to-peer network. You can [download MERGEX Core](https://www.mergex.org/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for POINTS digital currency and comprises the backbone of the POINTS peer-to-peer network. You can [download POINTS Core](https://www.mergex.org/downloads/) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
-The following are some helpful notes on how to run MERGEX on your native platform.
+The following are some helpful notes on how to run POINTS on your native platform.
 
 ### Unix
 
@@ -20,20 +20,20 @@ Unpack the files into a directory, and then run mergex-qt.exe.
 
 ### OS X
 
-Drag MERGEX-Qt to your applications folder, and then run MERGEX-Qt.
+Drag POINTS-Qt to your applications folder, and then run POINTS-Qt.
 
 ### Need Help?
 
-* See the [MERGEX documentation](https://docs.mergex.org)
+* See the [POINTS documentation](https://docs.mergex.org)
 for help and more information.
-* See the [MERGEX Developer Documentation](https://mergex-docs.github.io/) 
+* See the [POINTS Developer Documentation](https://mergex-docs.github.io/) 
 for technical specifications and implementation details.
-* Ask for help on [MERGEX Nation Discord](http://mergexchat.org)
-* Ask for help on the [MERGEX Forum](https://mergex.org/forum)
+* Ask for help on [POINTS Nation Discord](http://mergexchat.org)
+* Ask for help on the [POINTS Forum](https://mergex.org/forum)
 
 Building
 ---------------------
-The following are developer notes on how to build MERGEX Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build POINTS Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -43,7 +43,7 @@ The following are developer notes on how to build MERGEX Core on your native pla
 
 Development
 ---------------------
-The MERGEX Core repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The POINTS Core repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
@@ -59,8 +59,8 @@ The MERGEX Core repo's [root README](/README.md) contains relevant information o
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [MERGEX Forum](https://mergex.org/forum), in the Development & Technical Discussion board.
-* Discuss on [MERGEX Nation Discord](http://mergexchat.org)
+* Discuss on the [POINTS Forum](https://mergex.org/forum), in the Development & Technical Discussion board.
+* Discuss on [POINTS Nation Discord](http://mergexchat.org)
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

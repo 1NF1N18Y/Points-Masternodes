@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MERGEX_CRYPTO_BLS_BATCHVERIFIER_H
-#define MERGEX_CRYPTO_BLS_BATCHVERIFIER_H
+#ifndef POINTS_CRYPTO_BLS_BATCHVERIFIER_H
+#define POINTS_CRYPTO_BLS_BATCHVERIFIER_H
 
 #include <bls/bls.h>
 
@@ -237,4 +237,4 @@ private:
     }
 };
 
-#endif //MERGEX_CRYPTO_BLS_BATCHVERIFIER_H
+#endif //POINTS_CRYPTO_BLS_BATCHVERIFIER_H
