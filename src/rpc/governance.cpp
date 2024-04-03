@@ -166,7 +166,7 @@ UniValue gobject_prepare(const JSONRPCRequest& request)
 
     CGovernanceObject govobj(hashParent, nRevision, nTime, uint256(), strDataHex);
 
-    // This command is dangerous because it consumes 5 MERGEX irreversibly.
+    // This command is dangerous because it consumes 5 POINTS irreversibly.
     // If params are lost, it's very hard to bruteforce them and yet
     // users ignore all instructions on pointscentral etc. and do not save them...
     // Let's log them here and hope users do not mess with debug.log
@@ -1150,7 +1150,7 @@ UniValue getsuperblockbudget(const JSONRPCRequest& request)
 static const CRPCCommand commands[] =
 { //  category              name                      actor (function)         argNames
   //  --------------------- ------------------------  -----------------------  ----------
-    /* MERGEX features */
+    /* POINTS features */
     { "points",               "getgovernanceinfo",      &getgovernanceinfo,      {} },
     { "points",               "getsuperblockbudget",    &getsuperblockbudget,    {"index"} },
     { "points",               "gobject",                &gobject,                {} },

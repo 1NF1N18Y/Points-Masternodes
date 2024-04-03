@@ -136,7 +136,7 @@ public:
 };
 
 /**
- * MERGEX RPC command dispatcher.
+ * POINTS RPC command dispatcher.
  */
 class CRPCTable
 {

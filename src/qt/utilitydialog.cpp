@@ -127,13 +127,13 @@ HelpMessageDialog::HelpMessageDialog(interfaces::Node& node, QWidget *parent, He
         ui->aboutMessage->setText(tr("\
 <h3>%1 Basics</h3> \
 %1 gives you true financial privacy by obscuring the origins of your funds. \
-All the MERGEX in your wallet is comprised of different \"inputs\" which you can think of as separate, discrete coins.<br> \
+All the POINTS in your wallet is comprised of different \"inputs\" which you can think of as separate, discrete coins.<br> \
 %1 uses an innovative process to mix your inputs with the inputs of two or more other people, without having your coins ever leave your wallet. \
 You retain control of your money at all times.<hr> \
 <b>The %1 process works like this:</b>\
 <ol type=\"1\"> \
 <li>%1 begins by breaking your transaction inputs down into standard denominations. \
-These denominations are 0.001 MERGEX, 0.01 MERGEX, 0.1 MERGEX, 1 MERGEX and 10 MERGEX -- sort of like the paper money you use every day.</li> \
+These denominations are 0.001 POINTS, 0.01 POINTS, 0.1 POINTS, 1 POINTS and 10 POINTS -- sort of like the paper money you use every day.</li> \
 <li>Your wallet then sends requests to specially configured software nodes on the network, called \"masternodes.\" \
 These masternodes are informed then that you are interested in mixing a certain denomination. \
 No identifiable information is sent to the masternodes, so they never know \"who\" you are.</li> \

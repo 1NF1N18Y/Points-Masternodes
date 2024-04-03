@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_SCRIPT_MERGEXCONSENSUS_H
-#define BITCOIN_SCRIPT_MERGEXCONSENSUS_H
+#ifndef BITCOIN_SCRIPT_POINTSCONSENSUS_H
+#define BITCOIN_SCRIPT_POINTSCONSENSUS_H
 
 #include <stdint.h>
 
@@ -74,4 +74,4 @@ EXPORT_SYMBOL unsigned int pointsconsensus_version();
 
 #undef EXPORT_SYMBOL
 
-#endif // BITCOIN_SCRIPT_MERGEXCONSENSUS_H
+#endif // BITCOIN_SCRIPT_POINTSCONSENSUS_H

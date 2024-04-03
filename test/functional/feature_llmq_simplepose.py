@@ -5,7 +5,7 @@
 
 import time
 
-from test_framework.test_framework import MERGEXTestFramework
+from test_framework.test_framework import POINTSTestFramework
 from test_framework.util import *
 
 '''
@@ -15,7 +15,7 @@ Checks simple PoSe system based on LLMQ commitments
 
 '''
 
-class LLMQSimplePoSeTest(MERGEXTestFramework):
+class LLMQSimplePoSeTest(POINTSTestFramework):
     def set_test_params(self):
         self.set_points_test_params(6, 5, fast_dip3_enforcement=True)
         self.set_points_llmq_test_params(5, 3)

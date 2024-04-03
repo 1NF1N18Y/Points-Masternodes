@@ -547,7 +547,7 @@ BOOST_FIXTURE_TEST_CASE(CreateTransactionTest, CreateTransactionTestSetup)
         }
     };
 
-    // First run the tests with only one input containing 100k XMERGEX
+    // First run the tests with only one input containing 100k XPOINTS
     {
         coinControl.SetNull();
         coinControl.Select(GetCoins({{100000, false}})[0]);

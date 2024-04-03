@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.points.MERGEX-Qt";
+        return @"org.points.POINTS-Qt";
     } else {
         return [self __bundleIdentifier];
     }

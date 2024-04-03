@@ -31,7 +31,7 @@ public:
     /** Close wallets */
     virtual void Close() const = 0;
 
-    // MERGEX Specific WalletInitInterface
+    // POINTS Specific WalletInitInterface
     virtual void AutoLockMasternodeCollaterals() const = 0;
     virtual void InitCoinJoinSettings() const = 0;
     virtual void InitKeePass() const = 0;

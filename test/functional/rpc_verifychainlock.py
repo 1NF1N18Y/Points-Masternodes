@@ -3,7 +3,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-from test_framework.test_framework import MERGEXTestFramework
+from test_framework.test_framework import POINTSTestFramework
 from test_framework.util import assert_raises_rpc_error
 
 '''
@@ -14,7 +14,7 @@ Test verifychainlock rpc
 '''
 
 
-class RPCVerifyChainLockTest(MERGEXTestFramework):
+class RPCVerifyChainLockTest(POINTSTestFramework):
     def set_test_params(self):
         # -whitelist is needed to avoid the trickling logic on node0
         self.set_points_test_params(5, 3, [["-whitelist=127.0.0.1"], [], [], [], []], fast_dip3_enforcement=True)

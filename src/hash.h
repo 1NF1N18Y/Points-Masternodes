@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2023 The MERGEX Core developers
+// Copyright (c) 2023 The POINTS Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -298,7 +298,7 @@ public:
 uint64_t SipHashUint256(uint64_t k0, uint64_t k1, const uint256& val);
 uint64_t SipHashUint256Extra(uint64_t k0, uint64_t k1, const uint256& val, uint32_t extra);
 
-/* ----------- MERGEX Hash ------------------------------------------------ */
+/* ----------- POINTS Hash ------------------------------------------------ */
 template<typename T1>
 inline uint256 HashX11(const T1 pbegin, const T1 pend)
 
@@ -366,7 +366,7 @@ inline uint256 HashX11(const T1 pbegin, const T1 pend)
 }
 
 
-/* ----------- MERGEX Hash ------------------------------------------------ */
+/* ----------- POINTS Hash ------------------------------------------------ */
 template<typename T1>
 inline uint256 HashX10(const T1 pbegin, const T1 pend)
 

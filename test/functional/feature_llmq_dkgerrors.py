@@ -3,7 +3,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-from test_framework.test_framework import MERGEXTestFramework
+from test_framework.test_framework import POINTSTestFramework
 
 '''
 feature_llmq_dkgerrors.py
@@ -12,7 +12,7 @@ Simulate and check DKG errors
 
 '''
 
-class LLMQDKGErrors(MERGEXTestFramework):
+class LLMQDKGErrors(POINTSTestFramework):
     def set_test_params(self):
         self.set_points_test_params(4, 3, [["-whitelist=127.0.0.1"]] * 4, fast_dip3_enforcement=True)
 

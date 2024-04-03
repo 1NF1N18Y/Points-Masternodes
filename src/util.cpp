@@ -87,7 +87,7 @@
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
-//MERGEX only features
+//POINTS only features
 bool fMasternodeMode = false;
 bool fDisableGovernance = false;
 /**
@@ -662,13 +662,13 @@ void PrintExceptionContinue(const std::exception_ptr pex, const char* pszExcepti
 
 fs::path GetDefaultDataDir()
 {
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\MERGEX
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\MERGEX
-    // Mac: ~/Library/Application Support/MERGEX
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\POINTS
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\POINTS
+    // Mac: ~/Library/Application Support/POINTS
     // Unix: ~/.points
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "MERGEX";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "POINTS";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -678,7 +678,7 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/MERGEX";
+    return pathRet / "Library/Application Support/POINTS";
 #else
     // Unix
     return pathRet / ".points";

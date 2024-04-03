@@ -42,14 +42,14 @@
 
 // Uncomment the following line to enable debugging messages
 // or enable on a per file basis prior to inclusion of util.h
-//#define ENABLE_MERGEX_DEBUG
-#ifdef ENABLE_MERGEX_DEBUG
+//#define ENABLE_POINTS_DEBUG
+#ifdef ENABLE_POINTS_DEBUG
 #define DBG( x ) x
 #else
 #define DBG( x )
 #endif
 
-//MERGEX only features
+//POINTS only features
 
 extern bool fMasternodeMode;
 extern bool fDisableGovernance;

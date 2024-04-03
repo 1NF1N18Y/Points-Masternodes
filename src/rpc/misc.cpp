@@ -51,7 +51,7 @@ UniValue debug(const JSONRPCRequest& request)
             "libevent logging is configured on startup and cannot be modified by this RPC during runtime.\n"
             "There are also a few meta-categories:\n"
             " - \"all\", \"1\" and \"\" activate all categories at once;\n"
-            " - \"points\" activates all MERGEX-specific categories at once;\n"
+            " - \"points\" activates all POINTS-specific categories at once;\n"
             " - \"none\" (or \"0\") deactivates all categories at once.\n"
             "Note: If specified category doesn't match any of the above, no error is thrown.\n"
             "\nArguments:\n"
@@ -549,7 +549,7 @@ UniValue getaddressmempool(const JSONRPCRequest& request)
             "    \"address\"  (string) The base58check encoded address\n"
             "    \"txid\"  (string) The related txid\n"
             "    \"index\"  (number) The related input or output index\n"
-            "    \"satoshis\"  (number) The difference of XMERGEX\n"
+            "    \"satoshis\"  (number) The difference of XPOINTS\n"
             "    \"timestamp\"  (number) The time the transaction entered the mempool (seconds)\n"
             "    \"prevtxid\"  (string) The previous txid (if spending)\n"
             "    \"prevout\"  (string) The previous transaction output index (if spending)\n"
@@ -621,7 +621,7 @@ UniValue getaddressutxos(const JSONRPCRequest& request)
             "    \"txid\"  (string) The output txid\n"
             "    \"outputIndex\"  (number) The output index\n"
             "    \"script\"  (string) The script hex encoded\n"
-            "    \"satoshis\"  (number) The number of XMERGEX of the output\n"
+            "    \"satoshis\"  (number) The number of XPOINTS of the output\n"
             "    \"height\"  (number) The block height\n"
             "  }\n"
             "]\n"
@@ -686,7 +686,7 @@ UniValue getaddressdeltas(const JSONRPCRequest& request)
             "\nResult:\n"
             "[\n"
             "  {\n"
-            "    \"satoshis\"  (number) The difference of XMERGEX\n"
+            "    \"satoshis\"  (number) The difference of XPOINTS\n"
             "    \"txid\"  (string) The related txid\n"
             "    \"index\"  (number) The related input or output index\n"
             "    \"blockindex\"  (number) The related block index\n"
@@ -771,10 +771,10 @@ UniValue getaddressbalance(const JSONRPCRequest& request)
             "}\n"
             "\nResult:\n"
             "{\n"
-            "  \"balance\": xxxxx,              (numeric) The current total balance in XMERGEX\n"
-            "  \"balance_immature\": xxxxx,     (numeric) The current immature balance in XMERGEX\n"
-            "  \"balance_spendable\": xxxxx,    (numeric) The current spendable balance in XMERGEX\n"
-            "  \"received\": xxxxx              (numeric) The total number of XMERGEX received (including change)\n"
+            "  \"balance\": xxxxx,              (numeric) The current total balance in XPOINTS\n"
+            "  \"balance_immature\": xxxxx,     (numeric) The current immature balance in XPOINTS\n"
+            "  \"balance_spendable\": xxxxx,    (numeric) The current spendable balance in XPOINTS\n"
+            "  \"received\": xxxxx              (numeric) The total number of XPOINTS received (including change)\n"
             "}\n"
             "\nExamples:\n"
             + HelpExampleCli("getaddressbalance", "'{\"addresses\": [\"XwnLY9Tf7Zsef8gMGL2fhWA9ZmMjt4KPwg\"]}'")
@@ -1067,7 +1067,7 @@ UniValue logging(const JSONRPCRequest& request)
             "The valid logging categories are: " + ListLogCategories() + "\n"
             "In addition, the following are available as category names with special meanings:\n"
             "  - \"all\",  \"1\" : represent all logging categories.\n"
-            "  - \"points\" activates all MERGEX-specific categories at once.\n"
+            "  - \"points\" activates all POINTS-specific categories at once.\n"
             "To deactivate all categories at once you can specify \"all\" in <exclude>.\n"
             "  - \"none\", \"0\" : even if other logging categories are specified, ignore all of them.\n"
             "\nArguments:\n"
@@ -1169,7 +1169,7 @@ static const CRPCCommand commands[] =
     { "addressindex",       "getaddresstxids",        &getaddresstxids,        {"addresses"} },
     { "addressindex",       "getaddressbalance",      &getaddressbalance,      {"addresses"} },
 
-    /* MERGEX features */
+    /* POINTS features */
     { "points",               "mnsync",                 &mnsync,                 {} },
     { "points",               "spork",                  &spork,                  {"arg0","value"} },
 

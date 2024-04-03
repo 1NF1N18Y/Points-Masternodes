@@ -2,7 +2,7 @@
 # Copyright (c) 2020-2021 The Dash Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-from test_framework.test_framework import MERGEXTestFramework
+from test_framework.test_framework import POINTSTestFramework
 from test_framework.util import assert_equal
 
 '''
@@ -11,7 +11,7 @@ rpc_masternode.py
 Test "masternode" rpc subcommands
 '''
 
-class RPCMasternodeTest(MERGEXTestFramework):
+class RPCMasternodeTest(POINTSTestFramework):
     def set_test_params(self):
         self.set_points_test_params(4, 3, fast_dip3_enforcement=True)
 

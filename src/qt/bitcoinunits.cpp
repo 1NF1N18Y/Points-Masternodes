@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2023 The MERGEX Core developers
+// Copyright (c) 2023 The POINTS Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -20,10 +20,10 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(MERGEX);
-    unitlist.append(mMERGEX);
-    unitlist.append(uMERGEX);
-    unitlist.append(XMERGEX);
+    unitlist.append(POINTS);
+    unitlist.append(mPOINTS);
+    unitlist.append(uPOINTS);
+    unitlist.append(XPOINTS);
     return unitlist;
 }
 
@@ -31,10 +31,10 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case MERGEX:
-    case mMERGEX:
-    case uMERGEX:
-    case XMERGEX:
+    case POINTS:
+    case mPOINTS:
+    case uPOINTS:
+    case XPOINTS:
         return true;
     default:
         return false;
@@ -47,10 +47,10 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case MERGEX: return QString("MERGEX");
-            case mMERGEX: return QString("mMERGEX");
-            case uMERGEX: return QString::fromUtf8("μMERGEX");
-            case XMERGEX: return QString("XMERGEX");
+            case POINTS: return QString("POINTS");
+            case mPOINTS: return QString("mPOINTS");
+            case uPOINTS: return QString::fromUtf8("μPOINTS");
+            case XPOINTS: return QString("XPOINTS");
             default: return QString("???");
         }
     }
@@ -58,10 +58,10 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case MERGEX: return QString("tMERGEX");
-            case mMERGEX: return QString("mtMERGEX");
-            case uMERGEX: return QString::fromUtf8("μtMERGEX");
-            case XMERGEX: return QString("tXMERGEX");
+            case POINTS: return QString("tPOINTS");
+            case mPOINTS: return QString("mtPOINTS");
+            case uPOINTS: return QString::fromUtf8("μtPOINTS");
+            case XPOINTS: return QString("tXPOINTS");
             default: return QString("???");
         }
     }
@@ -73,10 +73,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case MERGEX: return QString("MERGEX");
-            case mMERGEX: return QString("Milli-MERGEX (1 / 1" THIN_SP_UTF8 "000)");
-            case uMERGEX: return QString("Micro-MERGEX (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case XMERGEX: return QString("Ten Nano-MERGEX (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case POINTS: return QString("POINTS");
+            case mPOINTS: return QString("Milli-POINTS (1 / 1" THIN_SP_UTF8 "000)");
+            case uPOINTS: return QString("Micro-POINTS (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case XPOINTS: return QString("Ten Nano-POINTS (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -84,10 +84,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case MERGEX: return QString("TestMERGEXs");
-            case mMERGEX: return QString("Milli-TestMERGEX (1 / 1" THIN_SP_UTF8 "000)");
-            case uMERGEX: return QString("Micro-TestMERGEX (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case XMERGEX: return QString("Ten Nano-TestMERGEX (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case POINTS: return QString("TestPOINTSs");
+            case mPOINTS: return QString("Milli-TestPOINTS (1 / 1" THIN_SP_UTF8 "000)");
+            case uPOINTS: return QString("Micro-TestPOINTS (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case XPOINTS: return QString("Ten Nano-TestPOINTS (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -97,10 +97,10 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case MERGEX:  return 100000000;
-    case mMERGEX: return 100000;
-    case uMERGEX: return 100;
-    case XMERGEX: return 1;
+    case POINTS:  return 100000000;
+    case mPOINTS: return 100000;
+    case uPOINTS: return 100;
+    case XPOINTS: return 1;
     default:   return 100000000;
     }
 }
@@ -109,10 +109,10 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case MERGEX: return 8;
-    case mMERGEX: return 5;
-    case uMERGEX: return 2;
-    case XMERGEX: return 0;
+    case POINTS: return 8;
+    case mPOINTS: return 5;
+    case uPOINTS: return 2;
+    case XPOINTS: return 0;
     default: return 0;
     }
 }

@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Tests around points governance objects."""
 
-from test_framework.test_framework import MERGEXTestFramework
+from test_framework.test_framework import POINTSTestFramework
 from test_framework.util import *
 from test_framework.messages import *
 
@@ -19,7 +19,7 @@ def validate_object(prepared, rpc_prepared):
     assert_equal(prepared["data"], rpc_prepared["data"])
 
 
-class MERGEXGovernanceTest (MERGEXTestFramework):
+class POINTSGovernanceTest (POINTSTestFramework):
     def set_test_params(self):
         self.set_points_test_params(2, 1)
 
@@ -97,4 +97,4 @@ class MERGEXGovernanceTest (MERGEXTestFramework):
 
 
 if __name__ == '__main__':
-    MERGEXGovernanceTest().main()
+    POINTSGovernanceTest().main()

@@ -70,12 +70,12 @@
         <translation>Adresa de primire</translation>
     </message>
     <message>
-        <source>These are your MERGEX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Acestea sunt adresele tale MERGEX pentru efectuarea platilor. Intotdeauna verifica atent suma de plata si adresa beneficiarului inainte de a trimite monede.</translation>
+        <source>These are your POINTS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Acestea sunt adresele tale POINTS pentru efectuarea platilor. Intotdeauna verifica atent suma de plata si adresa beneficiarului inainte de a trimite monede.</translation>
     </message>
     <message>
-        <source>These are your MERGEX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Acestea sunt adresele tale MERGEX pentru receptionarea platilor. Este recomandat sa folosesti mereu o adresa noua pentru primirea platilor.</translation>
+        <source>These are your POINTS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Acestea sunt adresele tale POINTS pentru receptionarea platilor. Este recomandat sa folosesti mereu o adresa noua pentru primirea platilor.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -191,8 +191,8 @@
         <translation>Confirmaţi criptarea portofelului</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERGEX&lt;/b&gt;!</source>
-        <translation>Avertisment: dacă criptezi portofelul și pierzi fraza de acces, vei &lt;b&gt;PIERDE TOATE MONEDELE TALE MERGEX&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR POINTS&lt;/b&gt;!</source>
+        <translation>Avertisment: dacă criptezi portofelul și pierzi fraza de acces, vei &lt;b&gt;PIERDE TOATE MONEDELE TALE POINTS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -264,12 +264,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. MERGEX Core can no longer continue safely and will quit.</source>
-        <translation>A apărut o eroare fatală. MERGEX Core nu mai poate continua în siguranță și se va opri.</translation>
+        <source>A fatal error occurred. POINTS Core can no longer continue safely and will quit.</source>
+        <translation>A apărut o eroare fatală. POINTS Core nu mai poate continua în siguranță și se va opri.</translation>
     </message>
     <message>
-        <source>MERGEX Core</source>
-        <translation>MERGEX Core</translation>
+        <source>POINTS Core</source>
+        <translation>POINTS Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -292,8 +292,8 @@
         <translation>Trimite</translation>
     </message>
     <message>
-        <source>Send coins to a MERGEX address</source>
-        <translation>Trimite monede către o adresă MERGEX</translation>
+        <source>Send coins to a POINTS address</source>
+        <translation>Trimite monede către o adresă POINTS</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -301,7 +301,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and points: URIs)</source>
-        <translation>Cereţi plăţi (generează coduri QR şi MERGEX-uri: URls)</translation>
+        <translation>Cereţi plăţi (generează coduri QR şi POINTS-uri: URls)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -328,8 +328,8 @@
         <translation>Închide aplicaţia</translation>
     </message>
     <message>
-        <source>Show information about MERGEX Core</source>
-        <translation>Arată informații despre MERGEX Core</translation>
+        <source>Show information about POINTS Core</source>
+        <translation>Arată informații despre POINTS Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -400,16 +400,16 @@
         <translation>Semnează &amp;mesaj...</translation>
     </message>
     <message>
-        <source>Sign messages with your MERGEX addresses to prove you own them</source>
-        <translation>Semnaţi mesaje cu adresa dvs. MERGEX pentru a dovedi că vă aparţin</translation>
+        <source>Sign messages with your POINTS addresses to prove you own them</source>
+        <translation>Semnaţi mesaje cu adresa dvs. POINTS pentru a dovedi că vă aparţin</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Verifică mesaj...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MERGEX addresses</source>
-        <translation>Verificaţi mesaje pentru a vă asigura că au fost semnate cu adresa MERGEX specificată</translation>
+        <source>Verify messages to ensure they were signed with specified POINTS addresses</source>
+        <translation>Verificaţi mesaje pentru a vă asigura că au fost semnate cu adresa POINTS specificată</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -489,15 +489,15 @@
     </message>
     <message>
         <source>Open a points: URI or payment request</source>
-        <translation>Deschidere MERGEX: o adresa URI sau o cerere de plată</translation>
+        <translation>Deschidere POINTS: o adresa URI sau o cerere de plată</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Opţiuni linie de &amp;comandă</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible MERGEX command-line options</source>
-        <translation>Arată mesajul de ajutor %1 pentru a obţine o listă cu opţiunile posibile de linii de comandă MERGEX</translation>
+        <source>Show the %1 help message to get a list with possible POINTS command-line options</source>
+        <translation>Arată mesajul de ajutor %1 pentru a obţine o listă cu opţiunile posibile de linii de comandă POINTS</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -532,8 +532,8 @@
         <translation>Bara de file</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to MERGEX network</source>
-        <translation><numerusform>%n conexiune activă la rețeaua MERGEX</numerusform><numerusform>%n conexiuni active la rețeaua MERGEX</numerusform><numerusform>%n conexiuni active la rețeaua MERGEX </numerusform></translation>
+        <source>%n active connection(s) to POINTS network</source>
+        <translation><numerusform>%n conexiune activă la rețeaua POINTS</numerusform><numerusform>%n conexiuni active la rețeaua POINTS</numerusform><numerusform>%n conexiuni active la rețeaua POINTS </numerusform></translation>
     </message>
     <message>
         <source>Network activity disabled</source>
@@ -884,8 +884,8 @@
         <translation>Editează adresa de trimitere</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid MERGEX address.</source>
-        <translation>Adresa introdusă "%1" nu este o adresă MERGEX validă</translation>
+        <source>The entered address "%1" is not a valid POINTS address.</source>
+        <translation>Adresa introdusă "%1" nu este o adresă POINTS validă</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -982,8 +982,8 @@
         <translation>Informație TrimitePrivat</translation>
     </message>
     <message>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the MERGEX in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two or more other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 MERGEX, 0.01 MERGEX, 0.1 MERGEX, 1 MERGEX and 10 MERGEX -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two or more other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be mixed. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a style="%1" href="https://docs.points.org/en/stable/wallets/points/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
-        <translation>&lt;h3&gt;Informații de bază TrimitePrivat&lt;/h3&gt;TrimitePrivat oferă o intimitate financiară adevărată, ascunzând originea fondurilor. Toate monedele MERGEX din portofel sunt alcătuite din diferite "intrări" pe care le poți considera drept monede separate, discrete. &lt;br&gt; TrimitePrivat folosește un proces inovator pentru a amesteca intrările tale cu input-urile altor două persoane, fără ca monedele tale să părăsească vreodată portofelul tău. Menții controlul asupra banilor în orice moment.&lt;hr&gt; &lt;b&gt;Procesul TrimitePrivat funcționează astfel:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;TrimitePrivat începe prin ruperea intrărilor de tranzacții în denumiri standard. Aceste denumiri sunt 0.001 MERGEX, 0.01 MERGEX, 0.1 MERGEX, 1 MERGEX și 10 MERGEX - ceva asemănător cu banii de hârtie pe care îi folosim zilnic.&lt;/li&gt; &lt;li&gt;Portofelul tău trimite apoi cereri către nodurile software configurate special pe rețea, numite "masternodes". Aceste masternodes sunt informate atunci că eștii interesat să amesteci o anumită denominație. Nu sunt trimise nici un fel de informații identificabile la masternodes, astfel încât să nu știe niciodată "cine" ești.&lt;/li&gt; &lt;li&gt;Atunci când alte două persoane trimit mesaje similare, indicând faptul că doresc să amestece aceeași denominație, începe o sesiune de amestecare. Masternodul amestecă intrările și instruiește portofelele celor trei utilizatori să plătească intrarea transformată acum înapoi la ei înșiși. Portofelul tău plătește această denominație direct la sine, dar într-o altă adresă (numită o adresă de schimbare).&lt;/li&gt; &lt;li&gt;Pentru a închide complet fondurile tale, portofelul tău trebuie să repete acest proces de mai multe ori cu fiecare denominație. De fiecare dată când procesul este finalizat, se numește o "rundă". Fiecare rundă de TrimitePrivat o face exponențial mai dificil de determinat de unde au provenit fondurile.&lt;/li&gt; &lt;li&gt;Acest proces de amestecare se întâmplă în fundal, fără intervenție din partea ta când dorești să efectuezi o tranzacție, fondurile tale vor fi deja anonime. Nu este necesară o așteptare suplimentară.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt;Portofelul tău conține numai 1000 dintre aceste "adrese de schimbare". De fiecare dată când se întâmplă un eveniment de amestecare, până la 9 dintre adresele tale sunt epuizate. Aceasta înseamnă că cele 1000 de adrese durează aproximativ 100 de evenimente de amestecare. Atunci când sunt utilizate 900 dintre ele, portofelul tău trebuie să creeze mai multe adrese. Cu toate acestea, poți face acest lucru numai dacă ai activări de rezervă automate. &lt;br&gt;În consecință, utilizatorii care au backup-urile dezactivate vor avea și TrimitePrivat dezactivat . &lt;hr&gt;Pentru mai multe informații, consultă &lt;a style="%1" href="https://docs.points.org/en/stable/wallets/points/privatesend-instantsend.html"&gt;documentația PrivateSend&lt;/a&gt;.</translation>
+        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the POINTS in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an innovative process to mix your inputs with the inputs of two or more other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 POINTS, 0.01 POINTS, 0.1 POINTS, 1 POINTS and 10 POINTS -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two or more other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be mixed. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more information, see the &lt;a style="%1" href="https://docs.points.org/en/stable/wallets/points/privatesend-instantsend.html"&gt;PrivateSend documentation&lt;/a&gt;.</source>
+        <translation>&lt;h3&gt;Informații de bază TrimitePrivat&lt;/h3&gt;TrimitePrivat oferă o intimitate financiară adevărată, ascunzând originea fondurilor. Toate monedele POINTS din portofel sunt alcătuite din diferite "intrări" pe care le poți considera drept monede separate, discrete. &lt;br&gt; TrimitePrivat folosește un proces inovator pentru a amesteca intrările tale cu input-urile altor două persoane, fără ca monedele tale să părăsească vreodată portofelul tău. Menții controlul asupra banilor în orice moment.&lt;hr&gt; &lt;b&gt;Procesul TrimitePrivat funcționează astfel:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;TrimitePrivat începe prin ruperea intrărilor de tranzacții în denumiri standard. Aceste denumiri sunt 0.001 POINTS, 0.01 POINTS, 0.1 POINTS, 1 POINTS și 10 POINTS - ceva asemănător cu banii de hârtie pe care îi folosim zilnic.&lt;/li&gt; &lt;li&gt;Portofelul tău trimite apoi cereri către nodurile software configurate special pe rețea, numite "masternodes". Aceste masternodes sunt informate atunci că eștii interesat să amesteci o anumită denominație. Nu sunt trimise nici un fel de informații identificabile la masternodes, astfel încât să nu știe niciodată "cine" ești.&lt;/li&gt; &lt;li&gt;Atunci când alte două persoane trimit mesaje similare, indicând faptul că doresc să amestece aceeași denominație, începe o sesiune de amestecare. Masternodul amestecă intrările și instruiește portofelele celor trei utilizatori să plătească intrarea transformată acum înapoi la ei înșiși. Portofelul tău plătește această denominație direct la sine, dar într-o altă adresă (numită o adresă de schimbare).&lt;/li&gt; &lt;li&gt;Pentru a închide complet fondurile tale, portofelul tău trebuie să repete acest proces de mai multe ori cu fiecare denominație. De fiecare dată când procesul este finalizat, se numește o "rundă". Fiecare rundă de TrimitePrivat o face exponențial mai dificil de determinat de unde au provenit fondurile.&lt;/li&gt; &lt;li&gt;Acest proces de amestecare se întâmplă în fundal, fără intervenție din partea ta când dorești să efectuezi o tranzacție, fondurile tale vor fi deja anonime. Nu este necesară o așteptare suplimentară.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt;Portofelul tău conține numai 1000 dintre aceste "adrese de schimbare". De fiecare dată când se întâmplă un eveniment de amestecare, până la 9 dintre adresele tale sunt epuizate. Aceasta înseamnă că cele 1000 de adrese durează aproximativ 100 de evenimente de amestecare. Atunci când sunt utilizate 900 dintre ele, portofelul tău trebuie să creeze mai multe adrese. Cu toate acestea, poți face acest lucru numai dacă ai activări de rezervă automate. &lt;br&gt;În consecință, utilizatorii care au backup-urile dezactivate vor avea și TrimitePrivat dezactivat . &lt;hr&gt;Pentru mai multe informații, consultă &lt;a style="%1" href="https://docs.points.org/en/stable/wallets/points/privatesend-instantsend.html"&gt;documentația PrivateSend&lt;/a&gt;.</translation>
     </message>
 </context>
 <context>
@@ -1029,8 +1029,8 @@
         <translation>Aproximativ %1 GB de date vor fi stocate in acest director.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the MERGEX block chain.</source>
-        <translation>%1 va descarca si stoca o copie a blockchainului MERGEX</translation>
+        <source>%1 will download and store a copy of the POINTS block chain.</source>
+        <translation>%1 va descarca si stoca o copie a blockchainului POINTS</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1175,12 +1175,12 @@
         <translation>Form</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the MERGEX network, as detailed below.</source>
-        <translation>Tranzactiile recente pot sa nu fie inca vizibile, de aceea balanta portofelului poate fi incorecta. Aceasta informatie va fi corecta de indata ce portofelul va fi complet sincronizat cu reteaua MERGEX, asa cum este detaliat mai jos.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the POINTS network, as detailed below.</source>
+        <translation>Tranzactiile recente pot sa nu fie inca vizibile, de aceea balanta portofelului poate fi incorecta. Aceasta informatie va fi corecta de indata ce portofelul va fi complet sincronizat cu reteaua POINTS, asa cum este detaliat mai jos.</translation>
     </message>
     <message>
-        <source>Attempting to spend MERGEX that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Încercarea de a cheltui monede MERGEX care sunt afectate de tranzacțiile care nu au fost încă afișate nu va fi acceptată de rețea.</translation>
+        <source>Attempting to spend POINTS that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Încercarea de a cheltui monede POINTS care sunt afectate de tranzacțiile care nu au fost încă afișate nu va fi acceptată de rețea.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1321,12 +1321,12 @@
         <translation>Obiectiv Sold TrimitePrivat:</translation>
     </message>
     <message>
-        <source>Automatically open the MERGEX Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat portul client MERGEX Core de pe router. Asta funcționează numai atunci când routerul dvs. acceptă UPnP și este activat.</translation>
+        <source>Automatically open the POINTS Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Deschide automat portul client POINTS Core de pe router. Asta funcționează numai atunci când routerul dvs. acceptă UPnP și este activat.</translation>
     </message>
     <message>
-        <source>Connect to the MERGEX network through a SOCKS5 proxy.</source>
-        <translation>Conectare la reţeaua MERGEX printr-un proxy SOCKS.</translation>
+        <source>Connect to the POINTS network through a SOCKS5 proxy.</source>
+        <translation>Conectare la reţeaua POINTS printr-un proxy SOCKS.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1417,8 +1417,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the MERGEX network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Conectare la reteaua MERGEX printr-un proxy SOCKS5 separat pentru serviciile TOR ascunse.</translation>
+        <source>Connect to the POINTS network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Conectare la reteaua POINTS printr-un proxy SOCKS5 separat pentru serviciile TOR ascunse.</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
@@ -1514,8 +1514,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>Form</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MERGEX network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informatia afisata poate fi depasita.  Portofel se sincronizează automat cu rețeaua MERGEX după ce se stabilește o conexiune, dar acest proces nu s-a finalizat încă.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the POINTS network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informatia afisata poate fi depasita.  Portofel se sincronizează automat cu rețeaua POINTS după ce se stabilește o conexiune, dar acest proces nu s-a finalizat încă.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1598,8 +1598,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>Suma și Runde:</translation>
     </message>
     <message>
-        <source>0 MERGEX / 0 Rounds</source>
-        <translation>0 MERGEX / 0 Runde</translation>
+        <source>0 POINTS / 0 Rounds</source>
+        <translation>0 POINTS / 0 Runde</translation>
     </message>
     <message>
         <source>Submitted Denom:</source>
@@ -1734,7 +1734,7 @@ https://www.transifex.com/projects/p/points/</translation>
     </message>
     <message>
         <source>Cannot start points: click-to-pay handler</source>
-        <translation>MERGEX nu poate porni: click-to-pay handler</translation>
+        <translation>POINTS nu poate porni: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1749,8 +1749,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>Adresă pentru plată invalidă %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid MERGEX address or malformed URI parameters.</source>
-        <translation>URI nu poate fi analizat! Acest lucru poate fi cauzat de o adresă MERGEX invalidă sau parametri URI deformaţi.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid POINTS address or malformed URI parameters.</source>
+        <translation>URI nu poate fi analizat! Acest lucru poate fi cauzat de o adresă POINTS invalidă sau parametri URI deformaţi.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1847,8 +1847,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>Cantitate</translation>
     </message>
     <message>
-        <source>Enter a MERGEX address (e.g. %1)</source>
-        <translation>Introduceţi o adresă MERGEX (de exemplu %1)</translation>
+        <source>Enter a POINTS address (e.g. %1)</source>
+        <translation>Introduceţi o adresă POINTS (de exemplu %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2341,8 +2341,8 @@ https://www.transifex.com/projects/p/points/</translation>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the MERGEX network.</source>
-        <translation>Un mesaj opţional de ataşat la cererea de plată, care va fi afişat cînd cererea este deschisă. Notă: Acest mesaj nu va fi trimis cu plata către reţeaua MERGEX.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the POINTS network.</source>
+        <translation>Un mesaj opţional de ataşat la cererea de plată, care va fi afişat cînd cererea este deschisă. Notă: Acest mesaj nu va fi trimis cu plata către reţeaua POINTS.</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -2353,8 +2353,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>O etichetă opţională de asociat cu adresa de primire.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the MERGEX network.</source>
-        <translation>Un mesaj opțional pentru a atașa solicitării de plată, care va fi afișat la deschiderea cererii.&lt;br&gt;Notă: mesajul nu va fi trimis cu plata prin rețeaua MERGEX.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the POINTS network.</source>
+        <translation>Un mesaj opțional pentru a atașa solicitării de plată, care va fi afișat la deschiderea cererii.&lt;br&gt;Notă: mesajul nu va fi trimis cu plata prin rețeaua POINTS.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2582,7 +2582,7 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>Timp confirmare tinta:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 XMERGEX and the transaction is only 250 bytes, then "per kilobyte" only pays 250 XMERGEX in fee,&lt;br /&gt;while "at least" pays 1000 XMERGEX. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 XPOINTS and the transaction is only 250 bytes, then "per kilobyte" only pays 250 XPOINTS in fee,&lt;br /&gt;while "at least" pays 1000 XPOINTS. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation>Dacă taxa vamală este stabilită la 1000 de duffi și tranzacția are doar 250 de octeți, atunci "per kilobyte" plătește doar 250 de duffi în taxă,&lt;br /&gt;în timp ce "cel puțin" plătește 1000 de duffi. Pentru tranzacțiile mai mari decât un kilobyte, ambele plătesc cu kilobyte.</translation>
     </message>
     <message>
@@ -2782,8 +2782,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation><numerusform>Înceaperea confirmării estimată într-un %n block.</numerusform><numerusform>Înceaperea confirmării estimată în %n block-uri.</numerusform><numerusform>Înceaperea confirmării estimată în %n block-uri.</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid MERGEX address</source>
-        <translation>Atenţie: Adresa MERGEX nevalidă!</translation>
+        <source>Warning: Invalid POINTS address</source>
+        <translation>Atenţie: Adresa POINTS nevalidă!</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2813,8 +2813,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>Plăteşte că&amp;tre:</translation>
     </message>
     <message>
-        <source>The MERGEX address to send the payment to</source>
-        <translation>Adresa MERGEX către care se face plata</translation>
+        <source>The POINTS address to send the payment to</source>
+        <translation>Adresa POINTS către care se face plata</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2849,8 +2849,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>Su&amp;mă:</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of MERGEX than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Taxa va fi dedusă din suma trimisă. Destinatarul va primi o sumă mai mică de MERGEX decât introduci în câmpul pentru suma. Dacă sunt selectați mai mulți destinatari, taxa este împărțită în mod egal.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of POINTS than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Taxa va fi dedusă din suma trimisă. Destinatarul va primi o sumă mai mică de POINTS decât introduci în câmpul pentru suma. Dacă sunt selectați mai mulți destinatari, taxa este împărțită în mod egal.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2861,8 +2861,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>Mesaj:</translation>
     </message>
     <message>
-        <source>A message that was attached to the points: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
-        <translation>un mesaj a fost ataşat la MERGEX: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua MERGEX.</translation>
+        <source>A message that was attached to the points: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the POINTS network.</source>
+        <translation>un mesaj a fost ataşat la POINTS: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua POINTS.</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -2914,11 +2914,11 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>&amp;Semnează mesaj</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive MERGEX sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Poți semna mesaje / acorduri cu adreseletale pentru a dovedi că poți primi MERGEX trimis la ele. Ai grijă să nu semnezi nimic vag sau întâmplător, deoarece atacurile de tip phishing pot încerca să te păcălească să le dai identitatea ta. Semnează declarații complet-detaliate cu care ești de acord.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive POINTS sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Poți semna mesaje / acorduri cu adreseletale pentru a dovedi că poți primi POINTS trimis la ele. Ai grijă să nu semnezi nimic vag sau întâmplător, deoarece atacurile de tip phishing pot încerca să te păcălească să le dai identitatea ta. Semnează declarații complet-detaliate cu care ești de acord.</translation>
     </message>
     <message>
-        <source>The MERGEX address to sign the message with</source>
+        <source>The POINTS address to sign the message with</source>
         <translation>Adresa cu care semnaţi mesajul</translation>
     </message>
     <message>
@@ -2950,8 +2950,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>Copiaza semnatura curenta in clipboard-ul sistemului</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MERGEX address</source>
-        <translation>Semnează mesajul pentru a dovedi ca deţineţi acestă adresă MERGEX</translation>
+        <source>Sign the message to prove you own this POINTS address</source>
+        <translation>Semnează mesajul pentru a dovedi ca deţineţi acestă adresă POINTS</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2974,12 +2974,12 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>Introduceţi adresa de semnatură, mesajul (asiguraţi-vă că aţi copiat spaţiile, taburile etc. exact) şi semnatura dedesubt pentru a verifica mesajul. Aveţi grijă să nu citiţi mai mult în semnatură decît mesajul în sine, pentru a evita să fiţi păcăliţi de un atac de tip man-in-the-middle. De notat ca aceasta dovedeste doar ca semnatarul primeste odata cu adresa, nu dovedesta insa trimiterea vreunei tranzactii.</translation>
     </message>
     <message>
-        <source>The MERGEX address the message was signed with</source>
-        <translation>Introduceţi o adresă MERGEX</translation>
+        <source>The POINTS address the message was signed with</source>
+        <translation>Introduceţi o adresă POINTS</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MERGEX address</source>
-        <translation>Verificaţi mesajul pentru a vă asigura că a fost semnat cu adresa MERGEX specificată</translation>
+        <source>Verify the message to ensure it was signed with the specified POINTS address</source>
+        <translation>Verificaţi mesajul pentru a vă asigura că a fost semnat cu adresa POINTS specificată</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -4591,8 +4591,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>Opțiuni server RPC:</translation>
     </message>
     <message>
-        <source>MERGEX Core</source>
-        <translation>MERGEX Core</translation>
+        <source>POINTS Core</source>
+        <translation>POINTS Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

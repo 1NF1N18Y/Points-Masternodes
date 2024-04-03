@@ -876,7 +876,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         }
         else if (!IsValidDestination(dest)) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid MERGEX address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid POINTS address"));
         }
         else // Valid address
         {

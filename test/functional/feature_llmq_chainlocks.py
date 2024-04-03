@@ -6,7 +6,7 @@
 import time
 
 from test_framework.mininode import *
-from test_framework.test_framework import MERGEXTestFramework
+from test_framework.test_framework import POINTSTestFramework
 from test_framework.util import *
 
 '''
@@ -16,7 +16,7 @@ Checks LLMQs based ChainLocks
 
 '''
 
-class LLMQChainLocksTest(MERGEXTestFramework):
+class LLMQChainLocksTest(POINTSTestFramework):
     def set_test_params(self):
         self.set_points_test_params(4, 3, fast_dip3_enforcement=True)
 

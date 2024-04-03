@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 from test_framework.mininode import *
-from test_framework.test_framework import MERGEXTestFramework
+from test_framework.test_framework import POINTSTestFramework
 from test_framework.util import assert_equal, assert_raises_rpc_error
 
 '''
@@ -14,7 +14,7 @@ Tests mnauth RPC command
 '''
 
 
-class FakeMNAUTHTest(MERGEXTestFramework):
+class FakeMNAUTHTest(POINTSTestFramework):
     def set_test_params(self):
         self.set_points_test_params(2, 1, fast_dip3_enforcement=True)
 

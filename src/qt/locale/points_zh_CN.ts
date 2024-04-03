@@ -74,12 +74,12 @@
         <translation>正在接收地址</translation>
     </message>
     <message>
-        <source>These are your MERGEX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>这些是您要付款过去的MERGEX地址。在付款之前，务必要检查金额和收款地址是否正确。</translation>
+        <source>These are your POINTS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>这些是您要付款过去的POINTS地址。在付款之前，务必要检查金额和收款地址是否正确。</translation>
     </message>
     <message>
-        <source>These are your MERGEX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>这些是您用来收款的MERGEX地址。建议在每次交易时，都使用一个新的收款地址。</translation>
+        <source>These are your POINTS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>这些是您用来收款的POINTS地址。建议在每次交易时，都使用一个新的收款地址。</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -235,8 +235,8 @@
         <translation>确认加密钱包</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERGEX&lt;/b&gt;!</source>
-        <translation>警告:如果把钱包加​​密后又忘记密码，您就会从此&lt;b&gt;失去所有的MERGEX&lt;/b&gt;！</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR POINTS&lt;/b&gt;!</source>
+        <translation>警告:如果把钱包加​​密后又忘记密码，您就会从此&lt;b&gt;失去所有的POINTS&lt;/b&gt;！</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -312,12 +312,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. MERGEX Core can no longer continue safely and will quit.</source>
-        <translation>发生严重错误。MERGEX Core钱包不再能安全地运行下去，程序将会关闭。</translation>
+        <source>A fatal error occurred. POINTS Core can no longer continue safely and will quit.</source>
+        <translation>发生严重错误。POINTS Core钱包不再能安全地运行下去，程序将会关闭。</translation>
     </message>
     <message>
-        <source>MERGEX Core</source>
-        <translation>MERGEX Core</translation>
+        <source>POINTS Core</source>
+        <translation>POINTS Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -340,8 +340,8 @@
         <translation>发送(&amp;S)</translation>
     </message>
     <message>
-        <source>Send coins to a MERGEX address</source>
-        <translation>发送币至MERGEX地址</translation>
+        <source>Send coins to a POINTS address</source>
+        <translation>发送币至POINTS地址</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -349,7 +349,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and points: URIs)</source>
-        <translation>请求付款(生成二维码和MERGEX付款协议的URI)</translation>
+        <translation>请求付款(生成二维码和POINTS付款协议的URI)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -376,8 +376,8 @@
         <translation>退出程序</translation>
     </message>
     <message>
-        <source>Show information about MERGEX Core</source>
-        <translation>显示关于MERGEX Core信息</translation>
+        <source>Show information about POINTS Core</source>
+        <translation>显示关于POINTS Core信息</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -448,7 +448,7 @@
         <translation>消息签名(&amp;M)...</translation>
     </message>
     <message>
-        <source>Sign messages with your MERGEX addresses to prove you own them</source>
+        <source>Sign messages with your POINTS addresses to prove you own them</source>
         <translation>使用您的达市币地址进行消息签名以证明对此地址的所有权</translation>
     </message>
     <message>
@@ -456,8 +456,8 @@
         <translation>验证消息(&amp;V)...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MERGEX addresses</source>
-        <translation>验证消息是用来确定此消息是用指定的MERGEX地址签发的</translation>
+        <source>Verify messages to ensure they were signed with specified POINTS addresses</source>
+        <translation>验证消息是用来确定此消息是用指定的POINTS地址签发的</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -537,14 +537,14 @@
     </message>
     <message>
         <source>Open a points: URI or payment request</source>
-        <translation>打开一个MERGEX协议的URI或付款请求</translation>
+        <translation>打开一个POINTS协议的URI或付款请求</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>命令行选项(&amp;C)</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible MERGEX command-line options</source>
+        <source>Show the %1 help message to get a list with possible POINTS command-line options</source>
         <translation>显示 %1 帮助信息，获取可用命令行选项列表</translation>
     </message>
     <message>
@@ -576,8 +576,8 @@
         <translation>分页工具栏</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to MERGEX network</source>
-        <translation><numerusform>%n个有效的MERGEX网络连接</numerusform></translation>
+        <source>%n active connection(s) to POINTS network</source>
+        <translation><numerusform>%n个有效的POINTS网络连接</numerusform></translation>
     </message>
     <message>
         <source>Network activity disabled</source>
@@ -948,8 +948,8 @@
         <translation>编辑发送地址</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid MERGEX address.</source>
-        <translation>输入的地址“%1”不是有效的MERGEX地址。</translation>
+        <source>The entered address "%1" is not a valid POINTS address.</source>
+        <translation>输入的地址“%1”不是有效的POINTS地址。</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1049,7 +1049,7 @@
         <translation>会在此目录中存储约 %1 GB 的数据。</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the MERGEX block chain.</source>
+        <source>%1 will download and store a copy of the POINTS block chain.</source>
         <translation>%1 将会下载并存储比特币区块链。</translation>
     </message>
     <message>
@@ -1207,12 +1207,12 @@
         <translation>表单</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the MERGEX network, as detailed below.</source>
-        <translation>最近的交易可能尚未显示，因此您的钱包的余额可能不正确。一旦您的钱包完成与MERGEX网络的同步，这个信息将会修正，如下所述。</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the POINTS network, as detailed below.</source>
+        <translation>最近的交易可能尚未显示，因此您的钱包的余额可能不正确。一旦您的钱包完成与POINTS网络的同步，这个信息将会修正，如下所述。</translation>
     </message>
     <message>
-        <source>Attempting to spend MERGEX that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>假如您正在尝试花费尚未显示出来的MERGEX，这个交易将不会被网络所接受。</translation>
+        <source>Attempting to spend POINTS that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>假如您正在尝试花费尚未显示出来的POINTS，这个交易将不会被网络所接受。</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1325,8 +1325,8 @@
         <translation>混币循环数</translation>
     </message>
     <message>
-        <source>Automatically open the MERGEX Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自动在路由器打开MERGEX Core客户端端口。此项只在路由器支持UPnP且开启时有效。</translation>
+        <source>Automatically open the POINTS Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自动在路由器打开POINTS Core客户端端口。此项只在路由器支持UPnP且开启时有效。</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
@@ -1337,8 +1337,8 @@
         <translation>允许连入连接</translation>
     </message>
     <message>
-        <source>Connect to the MERGEX network through a SOCKS5 proxy.</source>
-        <translation>通过SOCKS5代理连接MERGEX网络。</translation>
+        <source>Connect to the POINTS network through a SOCKS5 proxy.</source>
+        <translation>通过SOCKS5代理连接POINTS网络。</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1437,8 +1437,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the MERGEX network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>通过另一个SOCKS5代理服务器作为Tor隐藏服务来连接到MERGEX网络。</translation>
+        <source>Connect to the POINTS network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>通过另一个SOCKS5代理服务器作为Tor隐藏服务来连接到POINTS网络。</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
@@ -1534,8 +1534,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>表单</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MERGEX network after a connection is established, but this process has not completed yet.</source>
-        <translation>显示的信息也许已过期。当与MERGEX网络连接后钱包程序会自动同步，但现在还未完成。</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the POINTS network after a connection is established, but this process has not completed yet.</source>
+        <translation>显示的信息也许已过期。当与POINTS网络连接后钱包程序会自动同步，但现在还未完成。</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1614,8 +1614,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>数量与循环次数：</translation>
     </message>
     <message>
-        <source>0 MERGEX / 0 Rounds</source>
-        <translation>0 MERGEX / 0 循环数</translation>
+        <source>0 POINTS / 0 Rounds</source>
+        <translation>0 POINTS / 0 循环数</translation>
     </message>
     <message>
         <source>Submitted Denom:</source>
@@ -1635,7 +1635,7 @@ https://www.transifex.com/projects/p/points/</translation>
     </message>
     <message>
         <source>The denominations you submitted to the Masternode.&lt;br&gt;To mix, other users must submit the exact same denominations.</source>
-        <translation>您向主节点所提交的用以面额化混合的MERGEX。&lt;br&gt;为了混合，其他用户必须提交完全一样的面额。</translation>
+        <translation>您向主节点所提交的用以面额化混合的POINTS。&lt;br&gt;为了混合，其他用户必须提交完全一样的面额。</translation>
     </message>
     <message>
         <source>out of sync</source>
@@ -1734,7 +1734,7 @@ https://www.transifex.com/projects/p/points/</translation>
     </message>
     <message>
         <source>Cannot start points: click-to-pay handler</source>
-        <translation>无法启动MERGEX程序：click-to-pay handler</translation>
+        <translation>无法启动POINTS程序：click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1749,8 +1749,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>无效的付款地址 %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid MERGEX address or malformed URI parameters.</source>
-        <translation>URI不能被解析! 原因可能是无效的MERGEX地址或URI参数格式错误。</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid POINTS address or malformed URI parameters.</source>
+        <translation>URI不能被解析! 原因可能是无效的POINTS地址或URI参数格式错误。</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1895,8 +1895,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>金额</translation>
     </message>
     <message>
-        <source>Enter a MERGEX address (e.g. %1)</source>
-        <translation>输入一个MERGEX地址(例如 %1)</translation>
+        <source>Enter a POINTS address (e.g. %1)</source>
+        <translation>输入一个POINTS地址(例如 %1)</translation>
     </message>
     <message>
         <source>Appearance Setup</source>
@@ -2473,8 +2473,8 @@ https://www.transifex.com/projects/p/points/</translation>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the MERGEX network.</source>
-        <translation>附加在付款要求中的讯息，可以不填，打开要求内容时会显示。注意：这个讯息不会随着付款送到MERGEX网路上。</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the POINTS network.</source>
+        <translation>附加在付款要求中的讯息，可以不填，打开要求内容时会显示。注意：这个讯息不会随着付款送到POINTS网路上。</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -2485,8 +2485,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>可为新建的收款地址添加一个可选标签。</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the MERGEX network.</source>
-        <translation>附加在付款要求中的讯息，可以不填，打开要求内容时会显示。&lt;br&gt;注意：这个讯息不会随着付款送到MERGEX网路上。</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the POINTS network.</source>
+        <translation>附加在付款要求中的讯息，可以不填，打开要求内容时会显示。&lt;br&gt;注意：这个讯息不会随着付款送到POINTS网路上。</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2726,8 +2726,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>确认时间目标：</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 XMERGEX and the transaction is only 250 bytes, then "per kilobyte" only pays 250 XMERGEX in fee,&lt;br /&gt;while "at least" pays 1000 XMERGEX. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>如果自定手续费设定为1000 XMERGEX，而交易信息只有250字节的话，那么选择"每千字节"就只会支付250 XMERGEX的手续费，&lt;br /&gt;而"至少"会支付1000 XMERGEX。但如果交易信息大于一千字节,那么两者都要按每千字节付费。</translation>
+        <source>If the custom fee is set to 1000 XPOINTS and the transaction is only 250 bytes, then "per kilobyte" only pays 250 XPOINTS in fee,&lt;br /&gt;while "at least" pays 1000 XPOINTS. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>如果自定手续费设定为1000 XPOINTS，而交易信息只有250字节的话，那么选择"每千字节"就只会支付250 XPOINTS的手续费，&lt;br /&gt;而"至少"会支付1000 XPOINTS。但如果交易信息大于一千字节,那么两者都要按每千字节付费。</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for points transactions than the network can process.</source>
@@ -2914,8 +2914,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation><numerusform>预计在%n 个区块内开始确认。</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid MERGEX address</source>
-        <translation>警告：无效的MERGEX地址</translation>
+        <source>Warning: Invalid POINTS address</source>
+        <translation>警告：无效的POINTS地址</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2945,7 +2945,7 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>付给(&amp;T)：</translation>
     </message>
     <message>
-        <source>The MERGEX address to send the payment to</source>
+        <source>The POINTS address to send the payment to</source>
         <translation>选择发款地址</translation>
     </message>
     <message>
@@ -2981,8 +2981,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>金额(&amp;M)</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of MERGEX than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>手续费将从发送金额中扣除。接收者将收到的MERGEX金额将会比您在金额字段中输入的金额为少。如果选择了多个收款人，该费用将会被平均摊分。</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of POINTS than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>手续费将从发送金额中扣除。接收者将收到的POINTS金额将会比您在金额字段中输入的金额为少。如果选择了多个收款人，该费用将会被平均摊分。</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2997,8 +2997,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>消息：</translation>
     </message>
     <message>
-        <source>A message that was attached to the points: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
-        <translation>附加在MERGEX付款协议URI中的信息，会和交易内容一并存储，可供您参考。提示：此信息不会发送到MERGEX网络上。</translation>
+        <source>A message that was attached to the points: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the POINTS network.</source>
+        <translation>附加在POINTS付款协议URI中的信息，会和交易内容一并存储，可供您参考。提示：此信息不会发送到POINTS网络上。</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -3050,11 +3050,11 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>签名消息(&amp;S)</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive MERGEX sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive POINTS sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>您可以用自己的地址签署信息/协议，来证明您对地址的所有权。但是请小心，不要签署语意含糊不清的内容，因为钓鱼式诈骗可能会用骗您签署的手法来冒充是您。只有在语句中的细节您都同意时才签署。</translation>
     </message>
     <message>
-        <source>The MERGEX address to sign the message with</source>
+        <source>The POINTS address to sign the message with</source>
         <translation>对此地址进行签名</translation>
     </message>
     <message>
@@ -3086,8 +3086,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>复制当前签名至剪切板</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MERGEX address</source>
-        <translation>签署信息证明您拥有此MERGEX地址</translation>
+        <source>Sign the message to prove you own this POINTS address</source>
+        <translation>签署信息证明您拥有此POINTS地址</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3110,12 +3110,12 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>请在下面输入接收者地址、消息（确保换行符、空格符、制表符等完全相同）和签名以验证消息。请仔细核对签名信息，以提防中间人攻击。请注意，这只是证明接收方签名的地址，它不能证明任何交易！</translation>
     </message>
     <message>
-        <source>The MERGEX address the message was signed with</source>
+        <source>The POINTS address the message was signed with</source>
         <translation>已签名的地址</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MERGEX address</source>
-        <translation>验证信息用来确保此被签署信息对应相对的MERGEX地址</translation>
+        <source>Verify the message to ensure it was signed with the specified POINTS address</source>
+        <translation>验证信息用来确保此被签署信息对应相对的POINTS地址</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3356,7 +3356,7 @@ https://www.transifex.com/projects/p/points/</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>生成的MERGEX在可以使用前必须有 %1 个成熟的区块。当您生成了此区块后，它将被广播到网络中以加入区块链。如果它未成功进入区块链，其状态将变更为“不接受”并且不可使用。这可能偶尔会发生，如果另一个节点比您早几秒钟成功生成一个区块。</translation>
+        <translation>生成的POINTS在可以使用前必须有 %1 个成熟的区块。当您生成了此区块后，它将被广播到网络中以加入区块链。如果它未成功进入区块链，其状态将变更为“不接受”并且不可使用。这可能偶尔会发生，如果另一个节点比您早几秒钟成功生成一个区块。</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3694,7 +3694,7 @@ https://www.transifex.com/projects/p/points/</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>发送MERGEX</translation>
+        <translation>发送POINTS</translation>
     </message>
 </context>
 <context>
@@ -3748,7 +3748,7 @@ https://www.transifex.com/projects/p/points/</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>警告: MERGEX网路对于区块链结的决定目前有分歧！看来有些矿工会有问题。</translation>
+        <translation>警告: POINTS网路对于区块链结的决定目前有分歧！看来有些矿工会有问题。</translation>
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
@@ -4327,8 +4327,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>详细信息请参阅debug.log。</translation>
     </message>
     <message>
-        <source>MERGEX Core</source>
-        <translation>MERGEX Core</translation>
+        <source>POINTS Core</source>
+        <translation>POINTS Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

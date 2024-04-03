@@ -70,12 +70,12 @@
         <translation>受取アドレス</translation>
     </message>
     <message>
-        <source>These are your MERGEX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>これらは送金するためのあなたの MERGEX アドレスです。送金する前に常に金額と受取アドレスを確認してください。</translation>
+        <source>These are your POINTS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>これらは送金するためのあなたの POINTS アドレスです。送金する前に常に金額と受取アドレスを確認してください。</translation>
     </message>
     <message>
-        <source>These are your MERGEX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>これらは送金を受取用のあなたのMERGEXアドレスです。トランザクションごとに新しい受け取り用アドレスの作成を推奨します。</translation>
+        <source>These are your POINTS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>これらは送金を受取用のあなたのPOINTSアドレスです。トランザクションごとに新しい受け取り用アドレスの作成を推奨します。</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -191,8 +191,8 @@
         <translation>ウォレットの暗号化を確認</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERGEX&lt;/b&gt;!</source>
-        <translation>警告: ウォレットを暗号化しパスフレーズを紛失した場合、あなたは &lt;b&gt;すべてのMERGEX&lt;/b&gt;を失います!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR POINTS&lt;/b&gt;!</source>
+        <translation>警告: ウォレットを暗号化しパスフレーズを紛失した場合、あなたは &lt;b&gt;すべてのPOINTS&lt;/b&gt;を失います!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -264,12 +264,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. MERGEX Core can no longer continue safely and will quit.</source>
-        <translation>重大なエラーが発生しました。 MERGEX Coreは安全に続行できなくなり終了します。</translation>
+        <source>A fatal error occurred. POINTS Core can no longer continue safely and will quit.</source>
+        <translation>重大なエラーが発生しました。 POINTS Coreは安全に続行できなくなり終了します。</translation>
     </message>
     <message>
-        <source>MERGEX Core</source>
-        <translation>MERGEX Core</translation>
+        <source>POINTS Core</source>
+        <translation>POINTS Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -292,8 +292,8 @@
         <translation>送金 (&amp;S)</translation>
     </message>
     <message>
-        <source>Send coins to a MERGEX address</source>
-        <translation>MERGEX アドレスに送金</translation>
+        <source>Send coins to a POINTS address</source>
+        <translation>POINTS アドレスに送金</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -328,8 +328,8 @@
         <translation>アプリケーションを終了</translation>
     </message>
     <message>
-        <source>Show information about MERGEX Core</source>
-        <translation>MERGEX Coreについての情報を表示</translation>
+        <source>Show information about POINTS Core</source>
+        <translation>POINTS Coreについての情報を表示</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -400,16 +400,16 @@
         <translation>メッセージの署名… (&amp;M)</translation>
     </message>
     <message>
-        <source>Sign messages with your MERGEX addresses to prove you own them</source>
-        <translation>あなたがMERGEX アドレスを所有していることを証明するために、あなたのMERGEXアドレスでメッセージに署名してください。</translation>
+        <source>Sign messages with your POINTS addresses to prove you own them</source>
+        <translation>あなたがPOINTS アドレスを所有していることを証明するために、あなたのPOINTSアドレスでメッセージに署名してください。</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>メッセージの検証… (&amp;V)</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified MERGEX addresses</source>
-        <translation>指定されたMERGEXアドレスで署名されたことを確認するためにメッセージを検証してください。</translation>
+        <source>Verify messages to ensure they were signed with specified POINTS addresses</source>
+        <translation>指定されたPOINTSアドレスで署名されたことを確認するためにメッセージを検証してください。</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -496,8 +496,8 @@
         <translation>コマンドラインオプション (&amp;C)</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible MERGEX command-line options</source>
-        <translation>有効なMERGEXのコマンドラインオプションのリストを見るために %1 のヘルプメッセージを表示</translation>
+        <source>Show the %1 help message to get a list with possible POINTS command-line options</source>
+        <translation>有効なPOINTSのコマンドラインオプションのリストを見るために %1 のヘルプメッセージを表示</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -532,7 +532,7 @@
         <translation>タブツールバー</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to MERGEX network</source>
+        <source>%n active connection(s) to POINTS network</source>
         <translation><numerusform>%n アクティブコネクション</numerusform></translation>
     </message>
     <message>
@@ -860,8 +860,8 @@
         <translation>送金アドレスを編集</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid MERGEX address.</source>
-        <translation>入力されたアドレス "%1" は有効なMERGEXアドレスではありません。</translation>
+        <source>The entered address "%1" is not a valid POINTS address.</source>
+        <translation>入力されたアドレス "%1" は有効なPOINTSアドレスではありません。</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1002,8 +1002,8 @@
         <translation>おおむね%1GBのデータがこのディレクトリに保存されます。</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the MERGEX block chain.</source>
-        <translation>%1はMERGEXのブロックチェーンの複製をダウンロードし保存します。</translation>
+        <source>%1 will download and store a copy of the POINTS block chain.</source>
+        <translation>%1はPOINTSのブロックチェーンの複製をダウンロードし保存します。</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1128,12 +1128,12 @@
         <translation>フォーム</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the MERGEX network, as detailed below.</source>
-        <translation>確認できない最新のトランザクションがあるかもしれません。これによりウォレットの残高は不正確なものである可能性があります。この情報はウォレットが一度MERGEXのネットワークへの同期が完了すると正確なものとなります。詳細は下記を参照してください。</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the POINTS network, as detailed below.</source>
+        <translation>確認できない最新のトランザクションがあるかもしれません。これによりウォレットの残高は不正確なものである可能性があります。この情報はウォレットが一度POINTSのネットワークへの同期が完了すると正確なものとなります。詳細は下記を参照してください。</translation>
     </message>
     <message>
-        <source>Attempting to spend MERGEX that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>表示されてないトランザクションに影響を受けたMERGEXを使用しようとするとネットワークに承認されません。</translation>
+        <source>Attempting to spend POINTS that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>表示されてないトランザクションに影響を受けたPOINTSを使用しようとするとネットワークに承認されません。</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1270,12 +1270,12 @@
         <translation>この設定は閾値として機能し、この量に達するとプライベートセンドが無効になります。</translation>
     </message>
     <message>
-        <source>Automatically open the MERGEX Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自動的にルーターのMERGEX Core クライアントポートを開放します。これはルーターがUPnP機能をサポートしておりUPnP機能が有効な場合にのみ機能します。</translation>
+        <source>Automatically open the POINTS Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自動的にルーターのPOINTS Core クライアントポートを開放します。これはルーターがUPnP機能をサポートしておりUPnP機能が有効な場合にのみ機能します。</translation>
     </message>
     <message>
-        <source>Connect to the MERGEX network through a SOCKS5 proxy.</source>
-        <translation>SOCKS5プロキシ経由でMERGEXネットワークに接続</translation>
+        <source>Connect to the POINTS network through a SOCKS5 proxy.</source>
+        <translation>SOCKS5プロキシ経由でPOINTSネットワークに接続</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1362,8 +1362,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the MERGEX network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Tor秘匿サービスを利用するため独立なSOCKS5プロキシ経由でMERGEXネットワークに接続</translation>
+        <source>Connect to the POINTS network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Tor秘匿サービスを利用するため独立なSOCKS5プロキシ経由でPOINTSネットワークに接続</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
@@ -1459,8 +1459,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>フォーム</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MERGEX network after a connection is established, but this process has not completed yet.</source>
-        <translation>表示された情報は古いかもしれません。接続が確立されればあなたのウォレットは MERGEXネットワークと自動的に同期しますが、このプロセスはまだ完了していません。</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the POINTS network after a connection is established, but this process has not completed yet.</source>
+        <translation>表示された情報は古いかもしれません。接続が確立されればあなたのウォレットは POINTSネットワークと自動的に同期しますが、このプロセスはまだ完了していません。</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1543,8 +1543,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>金額とラウンド</translation>
     </message>
     <message>
-        <source>0 MERGEX / 0 Rounds</source>
-        <translation>0 MERGEX / 0 ラウンド</translation>
+        <source>0 POINTS / 0 Rounds</source>
+        <translation>0 POINTS / 0 ラウンド</translation>
     </message>
     <message>
         <source>Submitted Denom:</source>
@@ -1671,7 +1671,7 @@ https://www.transifex.com/projects/p/points/</translation>
     </message>
     <message>
         <source>Cannot start points: click-to-pay handler</source>
-        <translation>MERGEX を起動できません: click-to-pay ハンドラー</translation>
+        <translation>POINTS を起動できません: click-to-pay ハンドラー</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1686,8 +1686,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>支払いのアドレス　%1　は無効です</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid MERGEX address or malformed URI parameters.</source>
-        <translation>URI を解析できません! これは無効な MERGEX アドレスあるいは不正な形式の URI パラメーターによって引き起こされた可能性があります。</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid POINTS address or malformed URI parameters.</source>
+        <translation>URI を解析できません! これは無効な POINTS アドレスあるいは不正な形式の URI パラメーターによって引き起こされた可能性があります。</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1784,8 +1784,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>総額</translation>
     </message>
     <message>
-        <source>Enter a MERGEX address (e.g. %1)</source>
-        <translation>MERGEXアドレスを入力してください (例 %1)</translation>
+        <source>Enter a POINTS address (e.g. %1)</source>
+        <translation>POINTSアドレスを入力してください (例 %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2278,8 +2278,8 @@ https://www.transifex.com/projects/p/points/</translation>
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the MERGEX network.</source>
-        <translation>支払いリクエストが開始された時に表示される、支払いリクエストに添付される任意のメッセージです。注意：このメッセージはMERGEXネットワークを通じて支払いと共に送信されるわけではありません。</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the POINTS network.</source>
+        <translation>支払いリクエストが開始された時に表示される、支払いリクエストに添付される任意のメッセージです。注意：このメッセージはPOINTSネットワークを通じて支払いと共に送信されるわけではありません。</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -2290,8 +2290,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>新しい受け取り用アドレスに紐づく任意のラベル。</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the MERGEX network.</source>
-        <translation>支払いリクエストが開始された時に表示される、支払いリクエストに添付される任意のメッセージです。注意：このメッセージはMERGEXネットワークを通じて支払いと共に送信されるわけではありません。</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the POINTS network.</source>
+        <translation>支払いリクエストが開始された時に表示される、支払いリクエストに添付される任意のメッセージです。注意：このメッセージはPOINTSネットワークを通じて支払いと共に送信されるわけではありません。</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2519,12 +2519,12 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>検証時間ターゲット:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 XMERGEX and the transaction is only 250 bytes, then "per kilobyte" only pays 250 XMERGEX in fee,&lt;br /&gt;while "at least" pays 1000 XMERGEX. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>カスタマイズされた手数料が1000XMERGEXに設定され、トランザクションが250 bytesしかなかった場合、キロバイトあたりでは250 XMERGEXしか手数料を支払いませんが&lt;br /&gt;最低でも1000 XMERGEX支払います。1キロバイト以上のトランザクションに対しては、1キロバイトあたり1000XMERGEX支払います。</translation>
+        <source>If the custom fee is set to 1000 XPOINTS and the transaction is only 250 bytes, then "per kilobyte" only pays 250 XPOINTS in fee,&lt;br /&gt;while "at least" pays 1000 XPOINTS. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>カスタマイズされた手数料が1000XPOINTSに設定され、トランザクションが250 bytesしかなかった場合、キロバイトあたりでは250 XPOINTSしか手数料を支払いませんが&lt;br /&gt;最低でも1000 XPOINTS支払います。1キロバイト以上のトランザクションに対しては、1キロバイトあたり1000XPOINTS支払います。</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for points transactions than the network can process.</source>
-        <translation>最低限の手数料しか支払わなくても、トランザクション量以上のスペースが対象ブロックにあれば問題ありません。&lt;br /&gt;しかし、ネットワークが処理できる以上のMERGEXのトランザクション需要があれば、処理されないトランザクションになり得ることに注意してください。</translation>
+        <translation>最低限の手数料しか支払わなくても、トランザクション量以上のスペースが対象ブロックにあれば問題ありません。&lt;br /&gt;しかし、ネットワークが処理できる以上のPOINTSのトランザクション需要があれば、処理されないトランザクションになり得ることに注意してください。</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2695,8 +2695,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation><numerusform>%n ブロック以内に検証が開始されると予想されます</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid MERGEX address</source>
-        <translation>警告：MERGEXアドレスが無効です</translation>
+        <source>Warning: Invalid POINTS address</source>
+        <translation>警告：POINTSアドレスが無効です</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2726,8 +2726,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>送り先: (&amp;T)</translation>
     </message>
     <message>
-        <source>The MERGEX address to send the payment to</source>
-        <translation>送金先MERGEXアドレス</translation>
+        <source>The POINTS address to send the payment to</source>
+        <translation>送金先POINTSアドレス</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2762,8 +2762,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>金額： (&amp;M)</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of MERGEX than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>手数料は総額から差し引かれます。受取人は入力した金額より少ないMERGEXを受け取ります。複数の受取人を選択した場合、手数料は等しく分割されます。</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of POINTS than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>手数料は総額から差し引かれます。受取人は入力した金額より少ないPOINTSを受け取ります。複数の受取人を選択した場合、手数料は等しく分割されます。</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2774,8 +2774,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>メッセージ：</translation>
     </message>
     <message>
-        <source>A message that was attached to the points: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MERGEX network.</source>
-        <translation>MERGEX: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはMERGEXネットワークを経由して送信されるわけではありません。</translation>
+        <source>A message that was attached to the points: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the POINTS network.</source>
+        <translation>POINTS: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはPOINTSネットワークを経由して送信されるわけではありません。</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -2827,12 +2827,12 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>メッセージの署名 (&amp;S)</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive MERGEX sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>あなたのアドレスを使用してあなたがMERGEXを受け取ることができるようにメッセージやアグリーメントに署名できます。充分に詳細が判明していてあなたが確認しているものだけに署名してください。フィッシングによってあなたの署名を読み取られないように注意してください。</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive POINTS sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>あなたのアドレスを使用してあなたがPOINTSを受け取ることができるようにメッセージやアグリーメントに署名できます。充分に詳細が判明していてあなたが確認しているものだけに署名してください。フィッシングによってあなたの署名を読み取られないように注意してください。</translation>
     </message>
     <message>
-        <source>The MERGEX address to sign the message with</source>
-        <translation>メッセージを署名する際に使用するMERGEXアドレス</translation>
+        <source>The POINTS address to sign the message with</source>
+        <translation>メッセージを署名する際に使用するPOINTSアドレス</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2863,8 +2863,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>現在の署名をシステムのクリップボードにコピー</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this MERGEX address</source>
-        <translation>この MERGEX アドレスを所有していることを証明するためにメッセージに署名</translation>
+        <source>Sign the message to prove you own this POINTS address</source>
+        <translation>この POINTS アドレスを所有していることを証明するためにメッセージに署名</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2887,12 +2887,12 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>受取人のアドレスとメッセージ（改行やスペース、タブなども完全に一致するよう注意してください）および署名を以下に入力し、メッセージを検証してください。中間者攻撃により騙されるのを防ぐため、署名対象のメッセージに書かれていること以上の意味を署名から読み取ろうとしないよう注意してください。これは署名作成者がこのアドレスで受け取ることを証明するだけであり、トランザクションの送信者を証明するものではないことに注意してください！</translation>
     </message>
     <message>
-        <source>The MERGEX address the message was signed with</source>
-        <translation>メッセージの署名に使用されたMERGEXアドレス</translation>
+        <source>The POINTS address the message was signed with</source>
+        <translation>メッセージの署名に使用されたPOINTSアドレス</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified MERGEX address</source>
-        <translation>指定されたMERGEXアドレスで署名されたことを確認するためメッセージを検証</translation>
+        <source>Verify the message to ensure it was signed with the specified POINTS address</source>
+        <translation>指定されたPOINTSアドレスで署名されたことを確認するためメッセージを検証</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -4460,8 +4460,8 @@ https://www.transifex.com/projects/p/points/</translation>
         <translation>RPCサーバのオプション：</translation>
     </message>
     <message>
-        <source>MERGEX Core</source>
-        <translation>MERGEXコア</translation>
+        <source>POINTS Core</source>
+        <translation>POINTSコア</translation>
     </message>
     <message>
         <source>The %s developers</source>

@@ -102,7 +102,7 @@ public:
         vOutpoints.assign(setSelected.begin(), setSelected.end());
     }
 
-    // MERGEX-specific helpers
+    // POINTS-specific helpers
 
     void UseCoinJoin(bool fUseCoinJoin)
     {

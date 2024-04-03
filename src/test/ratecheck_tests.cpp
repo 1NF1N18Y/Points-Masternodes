@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2020 The Dash Core developers
-// Copyright (c) 2023 The MERGEX Core developers
+// Copyright (c) 2023 The POINTS Core developers
 
 #include <governance/governance.h>
 

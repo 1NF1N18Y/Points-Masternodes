@@ -23,7 +23,7 @@ Build for your system first. Be sure to enable wallet, utils and daemon when you
 
 #### Dependencies
 
-Many MERGEX specific tests require points_hash. To install it:
+Many POINTS specific tests require points_hash. To install it:
 
 - Clone the repo `git clone https://github.com/pointspay/points_hash`
 - Install points_hash `cd points_hash && python3 setup.py install`

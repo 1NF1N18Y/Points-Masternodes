@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 from test_framework.mininode import *
-from test_framework.test_framework import MERGEXTestFramework
+from test_framework.test_framework import POINTSTestFramework
 from test_framework.util import *
 
 '''
@@ -14,7 +14,7 @@ Checks LLMQs signing sessions
 
 '''
 
-class LLMQSigningTest(MERGEXTestFramework):
+class LLMQSigningTest(POINTSTestFramework):
     def set_test_params(self):
         self.set_points_test_params(6, 5, fast_dip3_enforcement=True)
         self.set_points_llmq_test_params(5, 3)

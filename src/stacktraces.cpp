@@ -422,7 +422,7 @@ static std::string GetCrashInfoStrNoDebugInfo(crash_info ci)
     CDataStream ds(SER_DISK, 0);
 
     crash_info_header hdr;
-    hdr.magic = "MERGEXCrashInfo";
+    hdr.magic = "POINTSCrashInfo";
     hdr.version = 1;
     hdr.exeFileName = g_exeFileBaseName;
     ds << hdr;
@@ -458,7 +458,7 @@ std::string GetCrashInfoStrFromSerializedStr(const std::string& ciStr)
         return "Error while deserializing crash info header";
     }
 
-    if (hdr.magic != "MERGEXCrashInfo") {
+    if (hdr.magic != "POINTSCrashInfo") {
         return "Invalid magic string";
     }
     if (hdr.version != 1) {
