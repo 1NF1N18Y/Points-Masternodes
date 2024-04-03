@@ -359,8 +359,8 @@ public:
         consensus.lwmaAveragingWindow = 70;
         consensus.DevRewardStartHeight = 10;
         consensus.DevelopementFundShare = 5;
-        consensus.DevelopmentFundAddress = "MHH8CacrJk687F5mo3SpSYy6y7F9sxQXLu";
-        consensus.ExtraPayoutAddress = "MA8pDx2wyHnS2VVJGkCKn9dyoscVM55CAZ";
+        consensus.DevelopmentFundAddress = "PUiFHnFXo6B5G1rXpizJWvh17bCPtcur5a";
+        consensus.ExtraPayoutAddress = "PRDQXCjXmQxiSP7tVd5msXxCbgTBWpib7m";
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nPowKGWHeight = 1;
@@ -510,7 +510,7 @@ public:
         nPoolMaxParticipants = 20;
         nFulfilledRequestExpireTime = 60*60; // fulfilled requests expire in 1 hour
 
-        vSporkAddresses = {"MBZ4MbnExJ7M5mB52UawoVsmAFZPFdmFBU"};
+        vSporkAddresses = {"PAHVegV5EVPWhJqb64XenJXepWMiAGsmWf"};
         nMinSporkKeys = 1;
         fBIP9CheckMasternodesUpgraded = true;
 
